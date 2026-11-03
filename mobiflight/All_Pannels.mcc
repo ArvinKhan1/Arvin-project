@@ -2228,29 +2228,15 @@
         <configrefs />
       </settings>
     </config>
-    <config guid="45b23d22-d9a2-47fe-a3d3-e52d8073c64d">
-      <active>false</active>
+    <config guid="69f93457-4e7a-4852-a881-3fe86547666e">
+      <active>true</active>
       <description>Multi Panel Pitch Trim</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Multi Panel/ SN-9FB-4DA" name="Pitch Trim" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
-          <onLeft type="XplaneInputAction" inputType="DataRef" path="sim/aircraft/controls/acf_elev_dn" expression="" />
-          <onLeftFast type="XplaneInputAction" inputType="DataRef" path="sim/aircraft/controls/acf_elev_dn" expression="" />
-          <onRight type="XplaneInputAction" inputType="DataRef" path="sim/aircraft/controls/acf_elev_up" expression="" />
-          <onRightFast type="XplaneInputAction" inputType="DataRef" path="sim/aircraft/controls/acf_elev_up" expression="" />
-        </encoder>
-        <preconditions />
-        <configrefs />
-      </settings>
-    </config>
-    <config guid="69f93457-4e7a-4852-a881-3fe86547666e">
-      <active>true</active>
-      <description>Multi Panel Pitch Trim Copy</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Multi Panel/ SN-9FB-4DA" name="Pitch Trim" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <encoder>
-          <onLeft type="KeyInputAction" key="Ctrl+Shift+U" />
-          <onLeftFast type="KeyInputAction" key="Ctrl+Shift+U" />
-          <onRight type="KeyInputAction" key="Ctrl+Shift+D" />
-          <onRightFast type="KeyInputAction" key="Ctrl+Shift+D" />
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/flight_controls/pitch_trim_down" expression="" />
+          <onLeftFast type="XplaneInputAction" inputType="Command" path="sim/flight_controls/pitch_trim_down" expression="" />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/flight_controls/pitch_trim_up" expression="" />
+          <onRightFast type="XplaneInputAction" inputType="Command" path="sim/flight_controls/pitch_trim_up" expression="" />
         </encoder>
         <preconditions />
         <configrefs />
