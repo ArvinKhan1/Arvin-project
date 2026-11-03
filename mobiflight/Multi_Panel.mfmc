@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleName>Multi Panel</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Button Name="VS Selector" Pin="9" />
+  <Button Name="IAS Selector" Pin="10" />
+  <Button Name="HDG Selector" Pin="11" />
+  <Button Name="CRS Selector" Pin="12" />
+  <Button Name="ALT Selector" Pin="8" />
+  <Button Name="AP Button" Pin="44" />
+  <Button Name="APR Button" Pin="48" />
+  <Button Name="REV Button" Pin="46" />
+  <Button Name="HDG Button" Pin="42" />
+  <Button Name="ALT Button" Pin="36" />
+  <Button Name="VS Button" Pin="34" />
+  <Button Name="NAV Button" Pin="38" />
+  <Button Name="IAS Button" Pin="40" />
+  <Output Name="NAV LED" Pin="57" />
+  <Output Name="HDG LED" Pin="58" />
+  <Output Name="APR LED" Pin="60" />
+  <Output Name="REV LED" Pin="61" />
+  <Output Name="AP LED" Pin="59" />
+  <Output Name="VS LED" Pin="32" />
+  <Output Name="ALT LED" Pin="30" />
+  <Output Name="IAS LED" Pin="28" />
+  <Encoder Name="MUlti panel Knob" PinLeft="43" PinRight="45" EncoderType="0" />
+  <Encoder Name="Pitch Trim" PinLeft="50" PinRight="52" EncoderType="0" />
+  <Button Name="Auto Trot Arm" Pin="47" />
+  <Button Name="Flaps UP" Pin="53" />
+  <Button Name="Flaps DN" Pin="49" />
+  <LedModule Name="Multi Panel Dsp" DinPin="54" ClsPin="55" ClkPin="56" Brightness="15" NumModules="3" />
+  <Button Name="Auto Trot off" Pin="26" />
+</Config>

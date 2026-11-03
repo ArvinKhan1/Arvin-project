@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleName>Switch Panel</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Button Name="Taxi Switch" Pin="22" />
+  <Button Name="Strobe Switch" Pin="24" />
+  <Button Name="Nav Switch" Pin="26" />
+  <Button Name="Panel Switch" Pin="28" />
+  <Button Name="R Selector" Pin="50" />
+  <Button Name="Beacon Switch" Pin="30" />
+  <Button Name="Pilot Heat Switc" Pin="31" />
+  <Button Name="Master Bat Sw" Pin="33" />
+  <Button Name="Master Alt Sw" Pin="35" />
+  <Button Name="Landing Gear" Pin="37" />
+  <Button Name="L selector" Pin="46" />
+  <Button Name="BothAll Selector" Pin="48" />
+  <Button Name="Start Selector" Pin="52" />
+  <Output Name="N Green LED" Pin="2" />
+  <Output Name="L Red LED" Pin="3" />
+  <Output Name="L Green LED" Pin="4" />
+  <Output Name="R Red LED" Pin="5" />
+  <Output Name="R Green LED" Pin="6" />
+  <Output Name="N Red Led" Pin="7" />
+  <Button Name="Landing Switch" Pin="39" />
+  <Button Name="Fuel Pump Switch" Pin="41" />
+  <Button Name="Avionics Switch" Pin="43" />
+  <Button Name="De Ice Switch" Pin="45" />
+  <Button Name="Cowl Close Switc" Pin="32" />
+  <Button Name="Off Selector" Pin="44" />
+</Config>

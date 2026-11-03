@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleName>Radio Panel</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <LedModule Name="Radio Panel Scre" DinPin="54" ClsPin="55" ClkPin="56" Brightness="15" NumModules="4" />
+  <Button Name="Com 1 Bottom" Pin="53" />
+  <Button Name="Com 1 Top" Pin="52" />
+  <Button Name="Com2 Bottom" Pin="51" />
+  <Button Name="Com 2 Top" Pin="50" />
+  <Button Name="NAV 1 Bottom" Pin="49" />
+  <Button Name="Nav 1  Top" Pin="48" />
+  <Button Name="Nav 2 Bottom" Pin="47" />
+  <Button Name="Nav 2 Top" Pin="46" />
+  <Button Name="ADF Bottom" Pin="45" />
+  <Button Name="ADF Top" Pin="44" />
+  <Button Name="DME Bottom" Pin="43" />
+  <Button Name="DME  Top" Pin="42" />
+  <Button Name="XPRD Bottom" Pin="41" />
+  <Encoder Name="Top Small Knob" PinLeft="60" PinRight="61" EncoderType="1" />
+  <Encoder Name="Top Big Knob" PinLeft="13" PinRight="12" EncoderType="1" />
+  <Encoder Name="Bottom Smal Knob" PinLeft="59" PinRight="58" EncoderType="1" />
+  <Encoder Name="Bottom Big Knob" PinLeft="11" PinRight="10" EncoderType="4" />
+  <Button Name="Act Stby Top" Pin="8" />
+  <Button Name="Act Stby Bottom" Pin="9" />
+  <Button Name="XPRD Top" Pin="40" />
+</Config>
