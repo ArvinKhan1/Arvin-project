@@ -2233,10 +2233,38 @@
       <description>Multi Panel Pitch Trim</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Multi Panel/ SN-9FB-4DA" name="Pitch Trim" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
-          <onLeft type="XplaneInputAction" inputType="Command" path="sim/flight_controls/pitch_trim_down" expression="" />
-          <onLeftFast type="XplaneInputAction" inputType="Command" path="sim/flight_controls/pitch_trim_down" expression="" />
-          <onRight type="XplaneInputAction" inputType="Command" path="sim/flight_controls/pitch_trim_up" expression="" />
-          <onRightFast type="XplaneInputAction" inputType="Command" path="sim/flight_controls/pitch_trim_up" expression="" />
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/flight_controls/pitch_trim_up" expression="" />
+          <onLeftFast type="XplaneInputAction" inputType="Command" path="sim/flight_controls/pitch_trim_up" expression="" />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/flight_controls/pitch_trim_down" expression="" />
+          <onRightFast type="XplaneInputAction" inputType="Command" path="sim/flight_controls/pitch_trim_down" expression="" />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f19adb06-6b8e-4c1f-a20a-786ec0c7bbbe">
+      <active>true</active>
+      <description>Multi Panel Pitch Trim (speed x2)</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Multi Panel/ SN-9FB-4DA" name="Pitch Trim" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/flight_controls/pitch_trim_up" expression="" />
+          <onLeftFast type="XplaneInputAction" inputType="Command" path="sim/flight_controls/pitch_trim_up" expression="" />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/flight_controls/pitch_trim_down" expression="" />
+          <onRightFast type="XplaneInputAction" inputType="Command" path="sim/flight_controls/pitch_trim_down" expression="" />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="55e49f24-6f96-494b-b2f3-5c339b990173">
+      <active>true</active>
+      <description>Multi Panel Pitch Trim (speed x3)</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Multi Panel/ SN-9FB-4DA" name="Pitch Trim" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/flight_controls/pitch_trim_up" expression="" />
+          <onLeftFast type="XplaneInputAction" inputType="Command" path="sim/flight_controls/pitch_trim_up" expression="" />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/flight_controls/pitch_trim_down" expression="" />
+          <onRightFast type="XplaneInputAction" inputType="Command" path="sim/flight_controls/pitch_trim_down" expression="" />
         </encoder>
         <preconditions />
         <configrefs />

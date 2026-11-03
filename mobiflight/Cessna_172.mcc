@@ -1,0 +1,2502 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="391ed018-ccd2-4cff-b08d-5976953696f2">
+      <active>true</active>
+      <description>Multi panel Top 5 Digit Shows ALT</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit/autopilot/altitude" />
+        <modifiers>
+          <transformation active="True" expression="$-($%1)" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="0" operand="=" ifValue="12458" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="Multi Panel/ SN-9FB-4DA" trigger="normal" ledAddress="Multi Panel Dsp" ledConnector="3" ledModuleSize="5" ledPadding="True" ledReverseDigits="True" ledBrightnessRef="4e610dea-a79a-4337-bea1-17fb28c74c91" ledPaddingChar=" " ledDigits="0,1,2,3,4" />
+        <preconditions>
+          <precondition type="config" active="true" ref="2108d841-f645-450a-9980-a15acb30b9e0" operand="=" value="1" logic="or" />
+          <precondition type="config" active="true" ref="2108d841-f645-450a-9980-a15acb30b9e0" operand="=" value="2" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="26739c3a-632c-4bd1-b91f-c4cac630122f">
+      <active>true</active>
+      <description>Multi panel Bottom 5 Digit Shows VS</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit/autopilot/vertical_velocity" />
+        <modifiers>
+          <transformation active="True" expression="$-($%1)" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="0" operand="=" ifValue="12458" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="Multi Panel/ SN-9FB-4DA" trigger="normal" ledAddress="Multi Panel Dsp" ledConnector="2" ledModuleSize="5" ledPadding="True" ledReverseDigits="True" ledBrightnessRef="4e610dea-a79a-4337-bea1-17fb28c74c91" ledPaddingChar=" " ledDigits="0,1,2,3,4" />
+        <preconditions>
+          <precondition type="config" active="true" ref="2108d841-f645-450a-9980-a15acb30b9e0" operand="=" value="1" logic="or" />
+          <precondition type="config" active="true" ref="2108d841-f645-450a-9980-a15acb30b9e0" operand="=" value="2" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b7d79f0e-0c61-421e-a2c9-0d5a70448928">
+      <active>true</active>
+      <description>Multi panel Top 5 Digit Shows IAS</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit/autopilot/airspeed" />
+        <modifiers>
+          <transformation active="True" expression="$-($%1)" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="0" operand="=" ifValue="12458" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="Multi Panel/ SN-9FB-4DA" trigger="normal" ledAddress="Multi Panel Dsp" ledConnector="3" ledModuleSize="5" ledPadding="True" ledReverseDigits="True" ledBrightnessRef="4e610dea-a79a-4337-bea1-17fb28c74c91" ledPaddingChar=" " ledDigits="0,1,2,3,4" />
+        <preconditions>
+          <precondition type="config" active="true" ref="2108d841-f645-450a-9980-a15acb30b9e0" operand="=" value="3" logic="or" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="335f84f0-7923-4b7d-b322-38bca328e68f">
+      <active>true</active>
+      <description>Multi panel Bottom 5 Digit Shows IAS</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="True" value="0" operand="=" ifValue=" " elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="Multi Panel/ SN-9FB-4DA" trigger="normal" ledAddress="Multi Panel Dsp" ledConnector="2" ledModuleSize="5" ledPadding="True" ledReverseDigits="True" ledBrightnessRef="4e610dea-a79a-4337-bea1-17fb28c74c91" ledPaddingChar=" " ledDigits="0,1,2,3,4" />
+        <preconditions>
+          <precondition type="config" active="true" ref="2108d841-f645-450a-9980-a15acb30b9e0" operand="=" value="3" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c57d69e7-5ba8-495c-82a4-a5b064c93a57">
+      <active>true</active>
+      <description>Multi panel Top 5 Digit Shows HDG</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit2/autopilot/heading_dial_deg_mag_pilot" />
+        <modifiers>
+          <transformation active="True" expression="$-($%1)" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="0" operand="=" ifValue=" " elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="Multi Panel/ SN-9FB-4DA" trigger="normal" ledAddress="Multi Panel Dsp" ledConnector="3" ledModuleSize="5" ledPadding="True" ledReverseDigits="True" ledBrightnessRef="4e610dea-a79a-4337-bea1-17fb28c74c91" ledPaddingChar=" " ledDigits="0,1,2,3,4" />
+        <preconditions>
+          <precondition type="config" active="true" ref="2108d841-f645-450a-9980-a15acb30b9e0" operand="=" value="4" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="517f99f9-0e32-4a68-be96-fb5325240154">
+      <active>false</active>
+      <description>Multi panel Top 5 Digit Shows CRS</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit/radios/nav2_obs_degm2" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="0" operand="=" ifValue=" " elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="Multi Panel/ SN-9FB-4DA" trigger="normal" ledAddress="Multi Panel Dsp" ledConnector="3" ledModuleSize="5" ledPadding="True" ledReverseDigits="True" ledBrightnessRef="4e610dea-a79a-4337-bea1-17fb28c74c91" ledPaddingChar=" " ledDigits="0,1,2,3,4" />
+        <preconditions>
+          <precondition type="config" active="true" ref="2108d841-f645-450a-9980-a15acb30b9e0" operand="=" value="5" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="94e4a80a-ac1d-46b8-a3c2-2db36e237e82">
+      <active>true</active>
+      <description>Multi panel Top 5 Digit Shows CRS Copy</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit/radios/nav1_course_degm" />
+        <modifiers>
+          <transformation active="True" expression="$-($%1)" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="0" operand="=" ifValue=" " elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="Multi Panel/ SN-9FB-4DA" trigger="normal" ledAddress="Multi Panel Dsp" ledConnector="3" ledModuleSize="5" ledPadding="True" ledReverseDigits="True" ledBrightnessRef="4e610dea-a79a-4337-bea1-17fb28c74c91" ledPaddingChar=" " ledDigits="0,1,2,3,4" />
+        <preconditions>
+          <precondition type="config" active="true" ref="2108d841-f645-450a-9980-a15acb30b9e0" operand="=" value="5" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="3e9e94f2-e7bb-4ddb-913d-4d80afc2d575">
+      <active>true</active>
+      <description>Multi Panel Shows ALT VS</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="True" value="0" operand="=" ifValue="'.q=.l.-='" elseValue="0" />
+        </modifiers>
+        <display type="Display Module" serial="Multi Panel/ SN-9FB-4DA" trigger="normal" ledAddress="Multi Panel Dsp" ledConnector="1" ledModuleSize="5" ledPadding="False" ledReverseDigits="True" ledBrightnessRef="14bde65a-01f9-49d0-af1c-6424260fd91a" ledPaddingChar="0" ledDigits="0,1,2,3,4" />
+        <preconditions>
+          <precondition type="config" active="true" ref="2108d841-f645-450a-9980-a15acb30b9e0" operand="=" value="1" logic="or" />
+          <precondition type="config" active="true" ref="2108d841-f645-450a-9980-a15acb30b9e0" operand="=" value="2" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="0a316108-3ff2-4fea-9974-685cbb84a249">
+      <active>true</active>
+      <description>Multi Panel Shows IAS</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="True" value="0" operand="=" ifValue="'-.qu  '" elseValue="0" />
+          <interpolation active="True">
+            <value x="0" y="0" />
+            <value x="1024" y="1024" />
+          </interpolation>
+        </modifiers>
+        <display type="Display Module" serial="Multi Panel/ SN-9FB-4DA" trigger="normal" ledAddress="Multi Panel Dsp" ledConnector="1" ledModuleSize="5" ledPadding="False" ledReverseDigits="True" ledBrightnessRef="14bde65a-01f9-49d0-af1c-6424260fd91a" ledPaddingChar="0" ledDigits="0,1,2,3,4" />
+        <preconditions>
+          <precondition type="config" active="true" ref="2108d841-f645-450a-9980-a15acb30b9e0" operand="=" value="3" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="75ab75f9-9c27-498c-bb8b-a2cd2f8d2f17">
+      <active>true</active>
+      <description>Multi Panel Shows HDG</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="True" value="0" operand="=" ifValue="4.3c" elseValue="0" />
+        </modifiers>
+        <display type="Display Module" serial="Multi Panel/ SN-9FB-4DA" trigger="normal" ledAddress="Multi Panel Dsp" ledConnector="1" ledModuleSize="5" ledPadding="False" ledReverseDigits="True" ledBrightnessRef="14bde65a-01f9-49d0-af1c-6424260fd91a" ledPaddingChar="0" ledDigits="0,1,2" />
+        <preconditions>
+          <precondition type="config" active="true" ref="2108d841-f645-450a-9980-a15acb30b9e0" operand="=" value="4" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="edb05c01-9334-401d-902f-2255ad1aa3e7">
+      <active>true</active>
+      <description>Multi Panel Shows CRS</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="True" value="0" operand="=" ifValue="'.=.pu'" elseValue="0" />
+        </modifiers>
+        <display type="Display Module" serial="Multi Panel/ SN-9FB-4DA" trigger="normal" ledAddress="Multi Panel Dsp" ledConnector="1" ledModuleSize="5" ledPadding="False" ledReverseDigits="True" ledBrightnessRef="14bde65a-01f9-49d0-af1c-6424260fd91a" ledPaddingChar="0" ledDigits="0,1,2" />
+        <preconditions>
+          <precondition type="config" active="true" ref="2108d841-f645-450a-9980-a15acb30b9e0" operand="=" value="5" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="14bde65a-01f9-49d0-af1c-6424260fd91a">
+      <active>true</active>
+      <description>Brightness 15</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="True" value="0" operand="=" ifValue="15" elseValue="0" />
+        </modifiers>
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="4e610dea-a79a-4337-bea1-17fb28c74c91">
+      <active>true</active>
+      <description>Brightness 7</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="True" value="0" operand="=" ifValue="7" elseValue="0" />
+        </modifiers>
+        <display type="-" serial="Radio Panel/ SN-58FFFDFFFDFFFFFFFF" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2142db30-94e8-4963-aea2-eb004af21d4b">
+      <active>true</active>
+      <description>Multi Panel AP LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit2/autopilot/servos_on" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="Multi Panel/ SN-9FB-4DA" trigger="normal" pin="AP LED" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="34ea80e6-93cd-4db5-bca7-9d18e0160dfd">
+      <active>true</active>
+      <description>Multi Panel HDG LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit2/autopilot/heading_status" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="Multi Panel/ SN-9FB-4DA" trigger="normal" pin="HDG LED" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b9e74f87-215c-42d4-a298-e1b638f97473">
+      <active>false</active>
+      <description>Multi Panel HDG LED Copy</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit2/autopilot/heading_mode" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="Multi Panel/ SN-9FB-4DA" trigger="normal" pin="HDG LED" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="7af0fd27-1374-4d99-bccc-ed530f5c09ee">
+      <active>true</active>
+      <description>Multi Panel VS LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit2/autopilot/vvi_status" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="Multi Panel/ SN-9FB-4DA" trigger="normal" pin="VS LED" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="03a38492-48fa-44fc-91b4-1a0d57ba88fc">
+      <active>true</active>
+      <description>Multi Panel NAV LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit2/autopilot/nav_status" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="Multi Panel/ SN-9FB-4DA" trigger="normal" pin="NAV LED" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ddecadd6-84db-48c9-8f17-dacb906b026c">
+      <active>false</active>
+      <description>Multi Panel NAV LED Copy</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit/autopilot/mode_hnav" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="True" value="" operand="" ifValue="" elseValue="" />
+          <interpolation active="True">
+            <value x="9" y="0" />
+            <value x="21" y="1" />
+          </interpolation>
+        </modifiers>
+        <display type="Output" serial="Multi Panel/ SN-9FB-4DA" trigger="normal" pin="NAV LED" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8c45bd3b-16ad-4eb4-97cb-e3ea2744c7b6">
+      <active>true</active>
+      <description>Multi Panel IAS LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit2/autopilot/speed_status" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="Multi Panel/ SN-9FB-4DA" trigger="normal" pin="IAS LED" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="7572f980-3b70-453e-b3c0-3f4d40c16d85">
+      <active>true</active>
+      <description>Multi Panel ALT LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit2/autopilot/altitude_hold_status" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="Multi Panel/ SN-9FB-4DA" trigger="normal" pin="ALT LED" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="04d673ff-5735-4850-9626-5b8a9cc4d0e3">
+      <active>false</active>
+      <description>Multi Panel ALT LED Copy</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit/autopilot/altitude_mode" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+          <interpolation active="True">
+            <value x="16" y="0" />
+            <value x="20" y="1" />
+          </interpolation>
+        </modifiers>
+        <display type="Output" serial="Multi Panel/ SN-9FB-4DA" trigger="normal" pin="ALT LED" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b4219e69-1c67-4045-932e-b69f465e699d">
+      <active>true</active>
+      <description>Multi Panel APR LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit2/autopilot/approach_status" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="Multi Panel/ SN-9FB-4DA" trigger="normal" pin="APR LED" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="9b99d4b6-2195-49af-a936-5259df4df00f">
+      <active>true</active>
+      <description>Multi Panel REV LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit2/autopilot/backcourse_status" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="Multi Panel/ SN-9FB-4DA" trigger="normal" pin="REV LED" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="4cfcae2a-5a55-4e0c-b5dc-7ff20bdc9a63">
+      <active>true</active>
+      <description>Switch Panel N LED RED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/flightmodel2/gear/deploy_ratio[0]" />
+        <modifiers>
+          <transformation active="True" expression="Ceiling($)-Floor($)" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="Switch Panel/ SN-58FFFDFFFDFFFFFFFF" trigger="normal" pin="N Red Led" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="383849a4-24e9-456a-98a9-f86b9e4bc9ab">
+      <active>true</active>
+      <description>Switch Panel N LED GREEN</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/flightmodel2/gear/deploy_ratio[0]" />
+        <modifiers>
+          <transformation active="True" expression="Floor($)" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="Switch Panel/ SN-58FFFDFFFDFFFFFFFF" trigger="normal" pin="N Green LED" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5813b0a6-abc8-4a47-86b9-fdce0fd59c99">
+      <active>true</active>
+      <description>Switch Panel L LED RED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/flightmodel2/gear/deploy_ratio[1]" />
+        <modifiers>
+          <transformation active="True" expression="Ceiling($)-Floor($)" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="Switch Panel/ SN-58FFFDFFFDFFFFFFFF" trigger="normal" pin="L Red LED" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="287f8292-adcb-4ac3-824c-7394a69ad21b">
+      <active>true</active>
+      <description>Switch Panel L LED GREEN</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/flightmodel2/gear/deploy_ratio[1]" />
+        <modifiers>
+          <transformation active="True" expression="Floor($)" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="Switch Panel/ SN-58FFFDFFFDFFFFFFFF" trigger="normal" pin="L Green LED" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="38f049e6-24fd-415f-b745-c0de919db693">
+      <active>true</active>
+      <description>Switch Panel R LED RED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/flightmodel2/gear/deploy_ratio[2]" />
+        <modifiers>
+          <transformation active="True" expression="Ceiling($)-Floor($)" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="Switch Panel/ SN-58FFFDFFFDFFFFFFFF" trigger="normal" pin="R Red LED" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="4ad41a7b-65b8-439b-863c-efca61904b45">
+      <active>true</active>
+      <description>Switch Panel R LED GREEN</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/flightmodel2/gear/deploy_ratio[2]" />
+        <modifiers>
+          <transformation active="True" expression="Floor($)" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="Switch Panel/ SN-58FFFDFFFDFFFFFFFF" trigger="normal" pin="R Green LED" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="dca8ef64-fcb7-4af5-b1d2-2cff0ca8bc9a">
+      <active>true</active>
+      <description>Brightness 1</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="True" value="0" operand="=" ifValue="4" elseValue="0" />
+        </modifiers>
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="4304b6d2-b1db-4fc9-a00a-204ba7baa66a">
+      <active>true</active>
+      <description>Radio Panelt transfors Top Knob</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="Radio Panel Top Knob" varExpression="$" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="12" operand="=" ifValue="2" elseValue="" />
+        </modifiers>
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2108d841-f645-450a-9980-a15acb30b9e0">
+      <active>true</active>
+      <description>Multi Panel transfors Selector</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="Multi Panel Selector" varExpression="$" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="12" operand="=" ifValue="2" elseValue="" />
+        </modifiers>
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8a718224-c0c3-4a70-90e5-bc5b71eeab91">
+      <active>true</active>
+      <description>Radio Panelt transfors Bottom Knob</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="Radio Panel Bottom Knob" varExpression="$" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="12" operand="=" ifValue="2" elseValue="" />
+        </modifiers>
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="14a82d72-500d-4d71-8129-1bd0d37f2b63">
+      <active>true</active>
+      <description>Radio Panel Screen Top Right shows COM1</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit2/radios/actuators/com1_standby_frequency_hz" />
+        <modifiers>
+          <transformation active="True" expression="$*0.001" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="Radio Panel/ SN-28b-d2a" trigger="normal" ledAddress="Radio Panel Scre" ledConnector="1" ledModuleSize="5" ledPadding="False" ledReverseDigits="True" ledBrightnessRef="dca8ef64-fcb7-4af5-b1d2-2cff0ca8bc9a" ledPaddingChar="0" ledDigits="0,1,2,3,4" />
+        <preconditions>
+          <precondition type="config" active="true" ref="4304b6d2-b1db-4fc9-a00a-204ba7baa66a" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="786372d6-1796-42c4-b63f-dfe3520f9a67">
+      <active>true</active>
+      <description>Radio Panel Screen Bottom Right shows COM1</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit2/radios/actuators/com1_standby_frequency_hz" />
+        <modifiers>
+          <transformation active="True" expression="$*0.001" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="Radio Panel/ SN-28b-d2a" trigger="normal" ledAddress="Radio Panel Scre" ledConnector="2" ledModuleSize="5" ledPadding="False" ledReverseDigits="True" ledBrightnessRef="dca8ef64-fcb7-4af5-b1d2-2cff0ca8bc9a" ledPaddingChar="0" ledDigits="0,1,2,3,4" />
+        <preconditions>
+          <precondition type="config" active="true" ref="8a718224-c0c3-4a70-90e5-bc5b71eeab91" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f270b359-9d9b-4214-9032-f23a1dc464a9">
+      <active>true</active>
+      <description>Radio Panel Screen Top Right shows COM2</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit2/radios/actuators/com2_standby_frequency_hz" />
+        <modifiers>
+          <transformation active="True" expression="$*0.001" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="Radio Panel/ SN-28b-d2a" trigger="normal" ledAddress="Radio Panel Scre" ledConnector="1" ledModuleSize="5" ledPadding="False" ledReverseDigits="True" ledBrightnessRef="dca8ef64-fcb7-4af5-b1d2-2cff0ca8bc9a" ledPaddingChar="0" ledDigits="0,1,2,3,4" />
+        <preconditions>
+          <precondition type="config" active="true" ref="4304b6d2-b1db-4fc9-a00a-204ba7baa66a" operand="=" value="2" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b8cccd7b-95a8-4627-9ee8-3dd243fbdee7">
+      <active>true</active>
+      <description>Radio Panel Screen Bottom Right shows COM2</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit2/radios/actuators/com2_standby_frequency_hz" />
+        <modifiers>
+          <transformation active="True" expression="$*0.001" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="Radio Panel/ SN-28b-d2a" trigger="normal" ledAddress="Radio Panel Scre" ledConnector="2" ledModuleSize="5" ledPadding="False" ledReverseDigits="True" ledBrightnessRef="dca8ef64-fcb7-4af5-b1d2-2cff0ca8bc9a" ledPaddingChar="0" ledDigits="0,1,2,3,4" />
+        <preconditions>
+          <precondition type="config" active="true" ref="8a718224-c0c3-4a70-90e5-bc5b71eeab91" operand="=" value="2" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e1f63d9a-d8b2-4fea-a773-e3daa5089d57">
+      <active>true</active>
+      <description>Radio Panel Screen Top Right shows NAV1</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit/radios/nav1_stdby_freq_hz" />
+        <modifiers>
+          <transformation active="True" expression="$*0.001" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="Radio Panel/ SN-28b-d2a" trigger="normal" ledAddress="Radio Panel Scre" ledConnector="1" ledModuleSize="5" ledPadding="False" ledReverseDigits="True" ledBrightnessRef="dca8ef64-fcb7-4af5-b1d2-2cff0ca8bc9a" ledPaddingChar="0" ledDigits="0,1,2,3,4" />
+        <preconditions>
+          <precondition type="config" active="true" ref="4304b6d2-b1db-4fc9-a00a-204ba7baa66a" operand="=" value="3" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="37d80617-f2ae-4d32-be58-0b2d7fef53ff">
+      <active>true</active>
+      <description>Radio Panel Screen Bottom Right shows NAV1</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit/radios/nav1_stdby_freq_hz" />
+        <modifiers>
+          <transformation active="True" expression="$*0.001" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="Radio Panel/ SN-28b-d2a" trigger="normal" ledAddress="Radio Panel Scre" ledConnector="2" ledModuleSize="5" ledPadding="False" ledReverseDigits="True" ledBrightnessRef="dca8ef64-fcb7-4af5-b1d2-2cff0ca8bc9a" ledPaddingChar="0" ledDigits="0,1,2,3,4" />
+        <preconditions>
+          <precondition type="config" active="true" ref="8a718224-c0c3-4a70-90e5-bc5b71eeab91" operand="=" value="3" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="15e4344c-ff98-4f2a-8795-fb7275fb958e">
+      <active>true</active>
+      <description>Radio Panel Screen Top Right shows NAV2</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit2/radios/actuators/nav2_standby_frequency_hz" />
+        <modifiers>
+          <transformation active="True" expression="$*0.001" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="Radio Panel/ SN-28b-d2a" trigger="normal" ledAddress="Radio Panel Scre" ledConnector="1" ledModuleSize="5" ledPadding="False" ledReverseDigits="True" ledBrightnessRef="dca8ef64-fcb7-4af5-b1d2-2cff0ca8bc9a" ledPaddingChar="0" ledDigits="0,1,2,3,4" />
+        <preconditions>
+          <precondition type="config" active="true" ref="4304b6d2-b1db-4fc9-a00a-204ba7baa66a" operand="=" value="4" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b261604c-7566-48cc-b1ed-b49c3cd92aad">
+      <active>true</active>
+      <description>Radio Panel Screen Bottom Right shows NAV2</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit2/radios/actuators/nav2_standby_frequency_hz" />
+        <modifiers>
+          <transformation active="True" expression="$*0.001" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="Radio Panel/ SN-28b-d2a" trigger="normal" ledAddress="Radio Panel Scre" ledConnector="2" ledModuleSize="5" ledPadding="False" ledReverseDigits="True" ledBrightnessRef="dca8ef64-fcb7-4af5-b1d2-2cff0ca8bc9a" ledPaddingChar="0" ledDigits="0,1,2,3,4" />
+        <preconditions>
+          <precondition type="config" active="true" ref="8a718224-c0c3-4a70-90e5-bc5b71eeab91" operand="=" value="4" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="56b9eeb6-bbad-42b5-9057-86c845b97c3b">
+      <active>true</active>
+      <description>Radio Panel Screen Top Right shows ADF</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit/radios/adf1_stdby_freq_hz" />
+        <modifiers>
+          <transformation active="False" expression="$*0.001" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="Radio Panel/ SN-28b-d2a" trigger="normal" ledAddress="Radio Panel Scre" ledConnector="1" ledModuleSize="5" ledPadding="True" ledReverseDigits="True" ledBrightnessRef="dca8ef64-fcb7-4af5-b1d2-2cff0ca8bc9a" ledPaddingChar=" " ledDigits="0,1,2,3,4" />
+        <preconditions>
+          <precondition type="config" active="true" ref="4304b6d2-b1db-4fc9-a00a-204ba7baa66a" operand="=" value="5" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="21c42c41-ed66-474e-aab1-dd7c82f673bd">
+      <active>true</active>
+      <description>Radio Panel Screen Bottom Right shows ADF</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit/radios/adf1_stdby_freq_hz" />
+        <modifiers>
+          <transformation active="False" expression="$*0.001" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="Radio Panel/ SN-28b-d2a" trigger="normal" ledAddress="Radio Panel Scre" ledConnector="2" ledModuleSize="5" ledPadding="True" ledReverseDigits="True" ledBrightnessRef="dca8ef64-fcb7-4af5-b1d2-2cff0ca8bc9a" ledPaddingChar=" " ledDigits="0,1,2,3,4" />
+        <preconditions>
+          <precondition type="config" active="true" ref="8a718224-c0c3-4a70-90e5-bc5b71eeab91" operand="=" value="5" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5e5f7245-0160-482f-934b-5053f859840a">
+      <active>true</active>
+      <description>Radio Panel Screen Top Right shows DME</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit/radios/gps_dme_dist_m" />
+        <modifiers>
+          <transformation active="True" expression="$*0.001" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="Radio Panel/ SN-28b-d2a" trigger="normal" ledAddress="Radio Panel Scre" ledConnector="1" ledModuleSize="5" ledPadding="True" ledReverseDigits="True" ledBrightnessRef="dca8ef64-fcb7-4af5-b1d2-2cff0ca8bc9a" ledPaddingChar=" " ledDigits="0,1,2,3,4" />
+        <preconditions>
+          <precondition type="config" active="true" ref="4304b6d2-b1db-4fc9-a00a-204ba7baa66a" operand="=" value="6" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="7eb93056-b284-4eb1-8194-c978d88bd465">
+      <active>true</active>
+      <description>Radio Panel Screen Bottom Right shows DME</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit/radios/gps_dme_dist_m" />
+        <modifiers>
+          <transformation active="True" expression="$*0.001" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="Radio Panel/ SN-28b-d2a" trigger="normal" ledAddress="Radio Panel Scre" ledConnector="2" ledModuleSize="5" ledPadding="True" ledReverseDigits="True" ledBrightnessRef="dca8ef64-fcb7-4af5-b1d2-2cff0ca8bc9a" ledPaddingChar=" " ledDigits="0,1,2,3,4" />
+        <preconditions>
+          <precondition type="config" active="true" ref="8a718224-c0c3-4a70-90e5-bc5b71eeab91" operand="=" value="6" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="161a2d45-05f5-4057-86f1-9c93f0caac1f">
+      <active>true</active>
+      <description>Radio Panel Screen Top Right shows XPDR</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit/radios/transponder_code" />
+        <modifiers>
+          <transformation active="False" expression="$*0.001" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="Radio Panel/ SN-28b-d2a" trigger="normal" ledAddress="Radio Panel Scre" ledConnector="1" ledModuleSize="5" ledPadding="True" ledReverseDigits="True" ledBrightnessRef="dca8ef64-fcb7-4af5-b1d2-2cff0ca8bc9a" ledPaddingChar="0" ledDigits="1,2,3,4" />
+        <preconditions>
+          <precondition type="config" active="true" ref="4304b6d2-b1db-4fc9-a00a-204ba7baa66a" operand="=" value="7" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="4e519925-5402-45c5-befb-3e31b1f68f01">
+      <active>true</active>
+      <description>Radio Panel Screen Bottom Right shows XPDR</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit/radios/transponder_code" />
+        <modifiers>
+          <transformation active="False" expression="$*0.001" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="Radio Panel/ SN-28b-d2a" trigger="normal" ledAddress="Radio Panel Scre" ledConnector="2" ledModuleSize="5" ledPadding="True" ledReverseDigits="True" ledBrightnessRef="dca8ef64-fcb7-4af5-b1d2-2cff0ca8bc9a" ledPaddingChar="0" ledDigits="1,2,3,4" />
+        <preconditions>
+          <precondition type="config" active="true" ref="8a718224-c0c3-4a70-90e5-bc5b71eeab91" operand="=" value="7" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="7db5bc8e-5d66-4548-9969-98347ec80a03">
+      <active>true</active>
+      <description>Radio Panel Screen Top LEFT shows COM1</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit/radios/com1_freq_hz" />
+        <modifiers>
+          <transformation active="True" expression="$*0.001" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="Radio Panel/ SN-28b-d2a" trigger="normal" ledAddress="Radio Panel Scre" ledConnector="4" ledModuleSize="5" ledPadding="False" ledReverseDigits="True" ledBrightnessRef="dca8ef64-fcb7-4af5-b1d2-2cff0ca8bc9a" ledPaddingChar="0" ledDigits="0,1,2,3,4" />
+        <preconditions>
+          <precondition type="config" active="true" ref="4304b6d2-b1db-4fc9-a00a-204ba7baa66a" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="847442dd-7b8a-4eab-b628-7259064f5355">
+      <active>true</active>
+      <description>Radio Panel Screen Bottom LEFT shows COM1</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit/radios/com1_freq_hz" />
+        <modifiers>
+          <transformation active="True" expression="$*0.001" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="Radio Panel/ SN-28b-d2a" trigger="normal" ledAddress="Radio Panel Scre" ledConnector="3" ledModuleSize="5" ledPadding="False" ledReverseDigits="True" ledBrightnessRef="dca8ef64-fcb7-4af5-b1d2-2cff0ca8bc9a" ledPaddingChar="0" ledDigits="0,1,2,3,4" />
+        <preconditions>
+          <precondition type="config" active="true" ref="8a718224-c0c3-4a70-90e5-bc5b71eeab91" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="431db46b-0552-4f2e-9ab6-aa444adcb479">
+      <active>true</active>
+      <description>Radio Panel Screen Top LEFT shows COM2</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit/radios/com2_freq_hz" />
+        <modifiers>
+          <transformation active="True" expression="$*0.001" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="Radio Panel/ SN-28b-d2a" trigger="normal" ledAddress="Radio Panel Scre" ledConnector="4" ledModuleSize="5" ledPadding="False" ledReverseDigits="True" ledBrightnessRef="dca8ef64-fcb7-4af5-b1d2-2cff0ca8bc9a" ledPaddingChar="0" ledDigits="0,1,2,3,4" />
+        <preconditions>
+          <precondition type="config" active="true" ref="4304b6d2-b1db-4fc9-a00a-204ba7baa66a" operand="=" value="2" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="51a1542f-57d9-4247-a371-a7d0f49a0dde">
+      <active>true</active>
+      <description>Radio Panel Screen Bottom LEFT shows COM2</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit/radios/com2_freq_hz" />
+        <modifiers>
+          <transformation active="True" expression="$*0.001" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="Radio Panel/ SN-28b-d2a" trigger="normal" ledAddress="Radio Panel Scre" ledConnector="3" ledModuleSize="5" ledPadding="False" ledReverseDigits="True" ledBrightnessRef="dca8ef64-fcb7-4af5-b1d2-2cff0ca8bc9a" ledPaddingChar="0" ledDigits="0,1,2,3,4" />
+        <preconditions>
+          <precondition type="config" active="true" ref="8a718224-c0c3-4a70-90e5-bc5b71eeab91" operand="=" value="2" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8748e816-c2b5-454e-80f3-4ba56fe7f2b1">
+      <active>true</active>
+      <description>Radio Panel Screen Top LEFT shows NAV1</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit/radios/nav1_freq_hz" />
+        <modifiers>
+          <transformation active="True" expression="$*0.001" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="Radio Panel/ SN-28b-d2a" trigger="normal" ledAddress="Radio Panel Scre" ledConnector="4" ledModuleSize="5" ledPadding="False" ledReverseDigits="True" ledBrightnessRef="dca8ef64-fcb7-4af5-b1d2-2cff0ca8bc9a" ledPaddingChar="0" ledDigits="0,1,2,3,4" />
+        <preconditions>
+          <precondition type="config" active="true" ref="4304b6d2-b1db-4fc9-a00a-204ba7baa66a" operand="=" value="3" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="da012b9b-5ddb-4d00-8078-6e6a08ef4bc1">
+      <active>true</active>
+      <description>Radio Panel Screen Bottom LEFT shows NAV1</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit/radios/nav1_freq_hz" />
+        <modifiers>
+          <transformation active="True" expression="$*0.001" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="Radio Panel/ SN-28b-d2a" trigger="normal" ledAddress="Radio Panel Scre" ledConnector="3" ledModuleSize="5" ledPadding="False" ledReverseDigits="True" ledBrightnessRef="dca8ef64-fcb7-4af5-b1d2-2cff0ca8bc9a" ledPaddingChar="0" ledDigits="0,1,2,3,4" />
+        <preconditions>
+          <precondition type="config" active="true" ref="8a718224-c0c3-4a70-90e5-bc5b71eeab91" operand="=" value="3" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="78f46a0e-48cb-4e3f-8358-fae579389088">
+      <active>true</active>
+      <description>Radio Panel Screen Top LEFT shows NAV2</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit/radios/nav2_freq_hz" />
+        <modifiers>
+          <transformation active="True" expression="$*0.001" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="Radio Panel/ SN-28b-d2a" trigger="normal" ledAddress="Radio Panel Scre" ledConnector="4" ledModuleSize="5" ledPadding="False" ledReverseDigits="True" ledBrightnessRef="dca8ef64-fcb7-4af5-b1d2-2cff0ca8bc9a" ledPaddingChar="0" ledDigits="0,1,2,3,4" />
+        <preconditions>
+          <precondition type="config" active="true" ref="4304b6d2-b1db-4fc9-a00a-204ba7baa66a" operand="=" value="4" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="87fcaf3e-6ea9-4351-adb4-bca5a9c5495d">
+      <active>true</active>
+      <description>Radio Panel Screen Bottom LEFT shows NAV2</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit/radios/nav2_freq_hz" />
+        <modifiers>
+          <transformation active="True" expression="$*0.001" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="Radio Panel/ SN-28b-d2a" trigger="normal" ledAddress="Radio Panel Scre" ledConnector="3" ledModuleSize="5" ledPadding="False" ledReverseDigits="True" ledBrightnessRef="dca8ef64-fcb7-4af5-b1d2-2cff0ca8bc9a" ledPaddingChar="0" ledDigits="0,1,2,3,4" />
+        <preconditions>
+          <precondition type="config" active="true" ref="8a718224-c0c3-4a70-90e5-bc5b71eeab91" operand="=" value="4" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ed78328a-a082-4949-95bf-2861b3c8f445">
+      <active>true</active>
+      <description>Radio Panel Screen Top LEFT shows ADF</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit/radios/adf1_freq_hz" />
+        <modifiers>
+          <transformation active="False" expression="$*0.001" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="Radio Panel/ SN-28b-d2a" trigger="normal" ledAddress="Radio Panel Scre" ledConnector="4" ledModuleSize="5" ledPadding="True" ledReverseDigits="True" ledBrightnessRef="dca8ef64-fcb7-4af5-b1d2-2cff0ca8bc9a" ledPaddingChar=" " ledDigits="0,1,2,3,4" />
+        <preconditions>
+          <precondition type="config" active="true" ref="4304b6d2-b1db-4fc9-a00a-204ba7baa66a" operand="=" value="5" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="43ee6c2b-17ee-4649-b063-b5bca2628316">
+      <active>true</active>
+      <description>Radio Panel Screen Bottom LEFT shows ADF </description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit/radios/adf1_freq_hz" />
+        <modifiers>
+          <transformation active="False" expression="$*0.001" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="Radio Panel/ SN-28b-d2a" trigger="normal" ledAddress="Radio Panel Scre" ledConnector="3" ledModuleSize="5" ledPadding="True" ledReverseDigits="True" ledBrightnessRef="dca8ef64-fcb7-4af5-b1d2-2cff0ca8bc9a" ledPaddingChar=" " ledDigits="0,1,2,3,4" />
+        <preconditions>
+          <precondition type="config" active="true" ref="8a718224-c0c3-4a70-90e5-bc5b71eeab91" operand="=" value="5" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d2acd772-8eab-40a6-881a-d9541d9f7734">
+      <active>true</active>
+      <description>Radio Panel Screen Top LEFT shows DME</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="string" varName="NULL" varExpression="$" />
+        <modifiers>
+          <transformation active="False" expression="$*0.001" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="Radio Panel/ SN-28b-d2a" trigger="normal" ledAddress="Radio Panel Scre" ledConnector="4" ledModuleSize="5" ledPadding="False" ledReverseDigits="True" ledBrightnessRef="dca8ef64-fcb7-4af5-b1d2-2cff0ca8bc9a" ledPaddingChar=" " ledDigits="0,1,2,3,4" />
+        <preconditions>
+          <precondition type="config" active="true" ref="4304b6d2-b1db-4fc9-a00a-204ba7baa66a" operand="=" value="6" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5a495da4-1df2-435a-99ba-1fbece6bd133">
+      <active>true</active>
+      <description>Radio Panel Screen Bottom LEFT shows DME</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="string" varName="NULL" varExpression="$" />
+        <modifiers>
+          <transformation active="False" expression="$*0.001" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="Radio Panel/ SN-28b-d2a" trigger="normal" ledAddress="Radio Panel Scre" ledConnector="3" ledModuleSize="5" ledPadding="False" ledReverseDigits="True" ledBrightnessRef="dca8ef64-fcb7-4af5-b1d2-2cff0ca8bc9a" ledPaddingChar=" " ledDigits="0,1,2,3,4" />
+        <preconditions>
+          <precondition type="config" active="true" ref="8a718224-c0c3-4a70-90e5-bc5b71eeab91" operand="=" value="6" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="be438767-65dc-4a08-b8c2-afd3240d2869">
+      <active>true</active>
+      <description>Radio Panel Screen Top LEFT shows XPDR</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="string" varName="NULL" varExpression="$" />
+        <modifiers>
+          <transformation active="False" expression="$*0.001" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="Radio Panel/ SN-28b-d2a" trigger="normal" ledAddress="Radio Panel Scre" ledConnector="4" ledModuleSize="5" ledPadding="False" ledReverseDigits="True" ledBrightnessRef="dca8ef64-fcb7-4af5-b1d2-2cff0ca8bc9a" ledPaddingChar=" " ledDigits="0,1,2,3,4" />
+        <preconditions>
+          <precondition type="config" active="true" ref="4304b6d2-b1db-4fc9-a00a-204ba7baa66a" operand="=" value="7" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="7fa59e07-fa94-4ec1-86f4-15a533cd688a">
+      <active>true</active>
+      <description>Radio Panel Screen Bottom LEFT shows XPDR</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="string" varName="NULL" varExpression="$" />
+        <modifiers>
+          <transformation active="False" expression="$*0.001" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="Radio Panel/ SN-28b-d2a" trigger="normal" ledAddress="Radio Panel Scre" ledConnector="3" ledModuleSize="5" ledPadding="False" ledReverseDigits="True" ledBrightnessRef="dca8ef64-fcb7-4af5-b1d2-2cff0ca8bc9a" ledPaddingChar=" " ledDigits="0,1,2,3,4" />
+        <preconditions>
+          <precondition type="config" active="true" ref="8a718224-c0c3-4a70-90e5-bc5b71eeab91" operand="=" value="7" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="1867289d-b392-490b-b523-796a3a8138cb">
+      <active>true</active>
+      <description>NULL</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="string" varName="NULL" varExpression="$" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="-" serial="Radio Panel/ SN-58FFFDFFFDFFFFFFFF" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="cddc1138-580c-4ee9-980b-edce8865fb83">
+      <active>false</active>
+      <description>elev trim test</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/flightmodel2/controls/elevator_trim" />
+        <modifiers>
+          <transformation active="True" expression="@1" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="0" operand="!=" ifValue="0.63" elseValue="" />
+        </modifiers>
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="a5891305-6176-40da-aa4f-4e7409cf763f">
+      <active>true</active>
+      <description>Switch Panel Gear uo/Down</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Switch Panel/ SN-58FFFDFFFDFFFFFFFF" name="Landing Gear" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/flight_controls/landing_gear_down" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="sim/flight_controls/landing_gear_up" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b045074b-9499-4eb5-8dfb-b4938f05005e">
+      <active>true</active>
+      <description>Radio Panel Top big Encoder COM1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-28b-d2a" name="Top Big Knob" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/radios/stby_com1_coarse_down" expression="" />
+          <onLeftFast type="XplaneInputAction" inputType="Command" path="sim/radios/stby_com1_coarse_down" expression="" />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/radios/stby_com1_coarse_up" expression="" />
+          <onRightFast type="XplaneInputAction" inputType="Command" path="sim/radios/stby_com1_coarse_up" expression="" />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="4304b6d2-b1db-4fc9-a00a-204ba7baa66a" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="871042b0-f1cf-4b28-8ae7-9dd07bc4f87a">
+      <active>true</active>
+      <description>Radio Panel Bottom big Encoder COM1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-58FFFDFFFDFFFFFFFF" name="Bottom Big Knob" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/radios/stby_com1_coarse_down" expression="" />
+          <onLeftFast type="XplaneInputAction" inputType="Command" path="sim/radios/stby_com1_coarse_down" expression="" />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/radios/stby_com1_coarse_up" expression="" />
+          <onRightFast type="XplaneInputAction" inputType="Command" path="sim/radios/stby_com1_coarse_up" expression="" />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="8a718224-c0c3-4a70-90e5-bc5b71eeab91" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="155699df-ce59-4cc1-8646-d1ef3f999853">
+      <active>true</active>
+      <description>Radio Panel Top big Encoder COM2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-28b-d2a" name="Top Big Knob" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/radios/stby_com2_coarse_down" expression="" />
+          <onLeftFast type="XplaneInputAction" inputType="Command" path="sim/radios/stby_com2_coarse_down" expression="" />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/radios/stby_com2_coarse_up" expression="" />
+          <onRightFast type="XplaneInputAction" inputType="Command" path="sim/radios/stby_com2_coarse_up" expression="" />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="4304b6d2-b1db-4fc9-a00a-204ba7baa66a" operand="=" value="2" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="1a155d39-4ace-461a-942c-1185104a2724">
+      <active>true</active>
+      <description>Radio Panel Bottom big Encoder COM2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-58FFFDFFFDFFFFFFFF" name="Bottom Big Knob" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/radios/stby_com2_coarse_down" expression="" />
+          <onLeftFast type="XplaneInputAction" inputType="Command" path="sim/radios/stby_com2_coarse_down" expression="" />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/radios/stby_com2_coarse_up" expression="" />
+          <onRightFast type="XplaneInputAction" inputType="Command" path="sim/radios/stby_com2_coarse_up" expression="" />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="8a718224-c0c3-4a70-90e5-bc5b71eeab91" operand="=" value="2" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="76fdf366-1b7f-410b-a5e4-28d8fffc6571">
+      <active>true</active>
+      <description>Radio Panel Top big Encoder NAV1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-28b-d2a" name="Top Big Knob" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/radios/stby_nav1_coarse_down" expression="" />
+          <onLeftFast type="XplaneInputAction" inputType="Command" path="sim/radios/stby_nav1_coarse_down" expression="" />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/radios/stby_nav1_coarse_up" expression="" />
+          <onRightFast type="XplaneInputAction" inputType="Command" path="sim/radios/stby_nav1_coarse_up" expression="" />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="4304b6d2-b1db-4fc9-a00a-204ba7baa66a" operand="=" value="3" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="0ca69220-1a03-49ea-99c8-328ae6beba93">
+      <active>true</active>
+      <description>Radio Panel Bottom big Encoder NAV1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-58FFFDFFFDFFFFFFFF" name="Bottom Big Knob" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/radios/stby_nav1_coarse_down" expression="" />
+          <onLeftFast type="XplaneInputAction" inputType="Command" path="sim/radios/stby_nav1_coarse_down" expression="" />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/radios/stby_nav1_coarse_up" expression="" />
+          <onRightFast type="XplaneInputAction" inputType="Command" path="sim/radios/stby_nav1_coarse_up" expression="" />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="8a718224-c0c3-4a70-90e5-bc5b71eeab91" operand="=" value="3" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d28aaf1f-c194-4fbf-b7a0-65533ea024f4">
+      <active>true</active>
+      <description>Radio Panel Top big Encoder NAV2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-28b-d2a" name="Top Big Knob" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/radios/stby_nav2_coarse_down" expression="" />
+          <onLeftFast type="XplaneInputAction" inputType="Command" path="sim/radios/stby_nav2_coarse_down" expression="" />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/radios/stby_nav2_coarse_up" expression="" />
+          <onRightFast type="XplaneInputAction" inputType="Command" path="sim/radios/stby_nav2_coarse_up" expression="" />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="4304b6d2-b1db-4fc9-a00a-204ba7baa66a" operand="=" value="4" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a6b52417-1be1-4e04-8e31-312aeb308086">
+      <active>true</active>
+      <description>Radio Panel Bottom big Encoder NAV2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-58FFFDFFFDFFFFFFFF" name="Bottom Big Knob" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/radios/stby_nav2_coarse_down" expression="" />
+          <onLeftFast type="XplaneInputAction" inputType="Command" path="sim/radios/stby_nav2_coarse_down" expression="" />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/radios/stby_nav2_coarse_up" expression="" />
+          <onRightFast type="XplaneInputAction" inputType="Command" path="sim/radios/stby_nav2_coarse_up" expression="" />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="8a718224-c0c3-4a70-90e5-bc5b71eeab91" operand="=" value="4" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="47201c15-5fdc-4cdc-be9d-59428abe84dd">
+      <active>true</active>
+      <description>Radio Panel Top big Encoder ADF</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-28b-d2a" name="Top Big Knob" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/radios/stby_adf1_hundreds_thous_down" expression="" />
+          <onLeftFast type="XplaneInputAction" inputType="Command" path="sim/radios/stby_adf1_hundreds_thous_down" expression="" />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/radios/stby_adf1_hundreds_thous_up" expression="" />
+          <onRightFast type="XplaneInputAction" inputType="Command" path="sim/radios/stby_adf1_hundreds_thous_up" expression="" />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="4304b6d2-b1db-4fc9-a00a-204ba7baa66a" operand="=" value="5" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="29de1878-9da8-46dd-be42-43ac859fc959">
+      <active>true</active>
+      <description>Radio Panel Bottom big Encoder ADF</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-58FFFDFFFDFFFFFFFF" name="Bottom Big Knob" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/radios/stby_adf1_hundreds_thous_down" expression="" />
+          <onLeftFast type="XplaneInputAction" inputType="Command" path="sim/radios/stby_adf1_hundreds_thous_down" expression="" />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/radios/stby_adf1_hundreds_thous_up" expression="" />
+          <onRightFast type="XplaneInputAction" inputType="Command" path="sim/radios/stby_adf1_hundreds_thous_up" expression="" />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="8a718224-c0c3-4a70-90e5-bc5b71eeab91" operand="=" value="5" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="9d1e5235-c90e-4d7e-9248-f410ec4ed564">
+      <active>true</active>
+      <description>Radio Panel Top big Encoder XPNDR Toggle 1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-28b-d2a" name="Top Big Knob" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/transponder/transponder_tens_down" expression="" />
+          <onLeftFast type="XplaneInputAction" inputType="Command" path="sim/transponder/transponder_tens_down" expression="" />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/transponder/transponder_tens_up" expression="" />
+          <onRightFast type="XplaneInputAction" inputType="Command" path="sim/transponder/transponder_tens_up" expression="" />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="4304b6d2-b1db-4fc9-a00a-204ba7baa66a" operand="=" value="7" logic="and" />
+          <precondition type="config" active="true" ref="2f0c3aac-d457-4c4e-959b-d52362ac945e" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="285716e1-d412-45b2-839c-5e0bd355a306">
+      <active>true</active>
+      <description>Radio Panel Bottom big Encoder XPNDR Toggle 1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-58FFFDFFFDFFFFFFFF" name="Bottom Big Knob" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/transponder/transponder_tens_down" expression="" />
+          <onLeftFast type="XplaneInputAction" inputType="Command" path="sim/transponder/transponder_tens_down" expression="" />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/transponder/transponder_tens_up" expression="" />
+          <onRightFast type="XplaneInputAction" inputType="Command" path="sim/transponder/transponder_tens_up" expression="" />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="8a718224-c0c3-4a70-90e5-bc5b71eeab91" operand="=" value="7" logic="and" />
+          <precondition type="config" active="true" ref="1f785849-06b9-4884-839a-50cea406e4b3" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d4cfb3e0-c451-44d5-aec9-7da59300a8bb">
+      <active>true</active>
+      <description>Radio Panel Top big Encoder XPNDR Toggle -1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-28b-d2a" name="Top Big Knob" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/transponder/transponder_thousands_down" expression="" />
+          <onLeftFast type="XplaneInputAction" inputType="Command" path="sim/transponder/transponder_thousands_down" expression="" />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/transponder/transponder_thousands_up" expression="" />
+          <onRightFast type="XplaneInputAction" inputType="Command" path="sim/transponder/transponder_thousands_up" expression="" />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="4304b6d2-b1db-4fc9-a00a-204ba7baa66a" operand="=" value="7" logic="and" />
+          <precondition type="config" active="true" ref="2f0c3aac-d457-4c4e-959b-d52362ac945e" operand="=" value="-1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="3c6ea5f6-7c54-449d-923a-1b6313391cf2">
+      <active>true</active>
+      <description>Radio Panel Bottom big Encoder XPNDR Toggle -1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-58FFFDFFFDFFFFFFFF" name="Bottom Big Knob" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/transponder/transponder_thousands_down" expression="" />
+          <onLeftFast type="XplaneInputAction" inputType="Command" path="sim/transponder/transponder_thousands_down" expression="" />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/transponder/transponder_thousands_up" expression="" />
+          <onRightFast type="XplaneInputAction" inputType="Command" path="sim/transponder/transponder_thousands_up" expression="" />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="8a718224-c0c3-4a70-90e5-bc5b71eeab91" operand="=" value="7" logic="and" />
+          <precondition type="config" active="true" ref="1f785849-06b9-4884-839a-50cea406e4b3" operand="=" value="-1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b9c77645-e712-4d27-8132-fdaa089ae9a6">
+      <active>true</active>
+      <description>Radio Panel Top Small Encoder COM1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-28b-d2a" name="Top Small Knob" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/radios/stby_com1_fine_down" expression="" />
+          <onLeftFast type="XplaneInputAction" inputType="Command" path="sim/radios/stby_com1_fine_down" expression="" />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/radios/stby_com1_fine_up" expression="" />
+          <onRightFast type="XplaneInputAction" inputType="Command" path="sim/radios/stby_com1_fine_up" expression="" />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="4304b6d2-b1db-4fc9-a00a-204ba7baa66a" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="469ceb71-4ea2-4c6f-8534-b71b06790dc0">
+      <active>true</active>
+      <description>Radio Panel Bottom Small Encoder COM1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-28b-d2a" name="Bottom Smal Knob" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/radios/stby_com1_fine_down" expression="" />
+          <onLeftFast type="XplaneInputAction" inputType="Command" path="sim/radios/stby_com1_fine_down" expression="" />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/radios/stby_com1_fine_up" expression="" />
+          <onRightFast type="XplaneInputAction" inputType="Command" path="sim/radios/stby_com1_fine_up" expression="" />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="8a718224-c0c3-4a70-90e5-bc5b71eeab91" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="1e403ad8-9a51-4fd4-aa2b-791d64df045f">
+      <active>true</active>
+      <description>Radio Panel Top Small Encoder COM2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-28b-d2a" name="Top Small Knob" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/radios/stby_com2_fine_down" expression="" />
+          <onLeftFast type="XplaneInputAction" inputType="Command" path="sim/radios/stby_com2_fine_down" expression="" />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/radios/stby_com2_fine_up" expression="" />
+          <onRightFast type="XplaneInputAction" inputType="Command" path="sim/radios/stby_com2_fine_up" expression="" />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="4304b6d2-b1db-4fc9-a00a-204ba7baa66a" operand="=" value="2" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e166cc8f-0ae6-4dcd-82d4-8df4e75f8d0b">
+      <active>true</active>
+      <description>Radio Panel Bottom Small Encoder COM2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-28b-d2a" name="Bottom Smal Knob" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/radios/stby_com2_fine_down" expression="" />
+          <onLeftFast type="XplaneInputAction" inputType="Command" path="sim/radios/stby_com2_fine_down" expression="" />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/radios/stby_com2_fine_up" expression="" />
+          <onRightFast type="XplaneInputAction" inputType="Command" path="sim/radios/stby_com2_fine_up" expression="" />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="8a718224-c0c3-4a70-90e5-bc5b71eeab91" operand="=" value="2" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="09f6f9ed-d938-4ba2-ba77-1a23266ea4d3">
+      <active>true</active>
+      <description>Radio Panel Top Small Encoder NAV 1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-28b-d2a" name="Top Small Knob" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/radios/stby_nav1_fine_down" expression="" />
+          <onLeftFast type="XplaneInputAction" inputType="Command" path="sim/radios/stby_nav1_fine_down" expression="" />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/radios/stby_nav1_fine_up" expression="" />
+          <onRightFast type="XplaneInputAction" inputType="Command" path="sim/radios/stby_nav1_fine_up" expression="" />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="4304b6d2-b1db-4fc9-a00a-204ba7baa66a" operand="=" value="3" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="9d20a7c5-f8a9-4118-8fa8-8afa26f3ca25">
+      <active>true</active>
+      <description>Radio Panel Bottom Small Encoder NAV 1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-28b-d2a" name="Bottom Smal Knob" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/radios/stby_nav1_fine_down" expression="" />
+          <onLeftFast type="XplaneInputAction" inputType="Command" path="sim/radios/stby_nav1_fine_down" expression="" />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/radios/stby_nav1_fine_up" expression="" />
+          <onRightFast type="XplaneInputAction" inputType="Command" path="sim/radios/stby_nav1_fine_up" expression="" />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="8a718224-c0c3-4a70-90e5-bc5b71eeab91" operand="=" value="3" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ca05247e-a78c-4cd7-9021-6efdbfc34566">
+      <active>true</active>
+      <description>Radio Panel Top Small Encoder NAV 2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-28b-d2a" name="Top Small Knob" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/radios/stby_nav2_fine_down" expression="" />
+          <onLeftFast type="XplaneInputAction" inputType="Command" path="sim/radios/stby_nav2_fine_down" expression="" />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/radios/stby_nav2_fine_up" expression="" />
+          <onRightFast type="XplaneInputAction" inputType="Command" path="sim/radios/stby_nav2_fine_up" expression="" />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="4304b6d2-b1db-4fc9-a00a-204ba7baa66a" operand="=" value="4" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="9ad77d63-6194-4de8-bcd5-788365ef727b">
+      <active>true</active>
+      <description>Radio Panel Bottom Small Encoder NAV 2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-28b-d2a" name="Bottom Smal Knob" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/radios/stby_nav2_fine_down" expression="" />
+          <onLeftFast type="XplaneInputAction" inputType="Command" path="sim/radios/stby_nav2_fine_down" expression="" />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/radios/stby_nav2_fine_up" expression="" />
+          <onRightFast type="XplaneInputAction" inputType="Command" path="sim/radios/stby_nav2_fine_up" expression="" />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="8a718224-c0c3-4a70-90e5-bc5b71eeab91" operand="=" value="4" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="02fa3ae5-225c-40ef-8251-cd08cd049308">
+      <active>true</active>
+      <description>Radio Panel Top Small Encoder ADF</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-28b-d2a" name="Top Small Knob" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/radios/stby_adf1_ones_tens_down" expression="" />
+          <onLeftFast type="XplaneInputAction" inputType="Command" path="sim/radios/stby_adf1_ones_tens_down" expression="" />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/radios/stby_adf1_ones_tens_up" expression="" />
+          <onRightFast type="XplaneInputAction" inputType="Command" path="sim/radios/stby_adf1_ones_tens_up" expression="" />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="4304b6d2-b1db-4fc9-a00a-204ba7baa66a" operand="=" value="5" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="db3e1291-3696-48e2-87a7-91468bd656fd">
+      <active>true</active>
+      <description>Radio Panel Bottom Small Encoder ADF</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-28b-d2a" name="Bottom Smal Knob" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/radios/stby_adf1_ones_tens_down" expression="" />
+          <onLeftFast type="XplaneInputAction" inputType="Command" path="sim/radios/stby_adf1_ones_tens_down" expression="" />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/radios/stby_adf1_ones_tens_up" expression="" />
+          <onRightFast type="XplaneInputAction" inputType="Command" path="sim/radios/stby_adf1_ones_tens_up" expression="" />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="8a718224-c0c3-4a70-90e5-bc5b71eeab91" operand="=" value="5" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="85ffaeb0-7ce1-40ce-8d8c-c2a0b2a4d5af">
+      <active>true</active>
+      <description>Radio Panel Top Small Encoder XPNDR Toggle1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-28b-d2a" name="Top Small Knob" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/transponder/transponder_ones_down" expression="" />
+          <onLeftFast type="XplaneInputAction" inputType="Command" path="sim/transponder/transponder_ones_down" expression="" />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/transponder/transponder_ones_up" expression="" />
+          <onRightFast type="XplaneInputAction" inputType="Command" path="sim/transponder/transponder_ones_up" expression="" />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="4304b6d2-b1db-4fc9-a00a-204ba7baa66a" operand="=" value="7" logic="and" />
+          <precondition type="config" active="true" ref="2f0c3aac-d457-4c4e-959b-d52362ac945e" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="337b1c00-0f01-44fc-8b80-53239ba4fa14">
+      <active>true</active>
+      <description>Radio Panel Bottom Small Encoder XPNDR Toggle1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-28b-d2a" name="Bottom Smal Knob" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/transponder/transponder_ones_down" expression="" />
+          <onLeftFast type="XplaneInputAction" inputType="Command" path="sim/transponder/transponder_ones_down" expression="" />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/transponder/transponder_ones_up" expression="" />
+          <onRightFast type="XplaneInputAction" inputType="Command" path="sim/transponder/transponder_ones_up" expression="" />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="8a718224-c0c3-4a70-90e5-bc5b71eeab91" operand="=" value="7" logic="and" />
+          <precondition type="config" active="true" ref="1f785849-06b9-4884-839a-50cea406e4b3" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="44135aa0-b7a3-48f6-8713-27125f63a4bd">
+      <active>true</active>
+      <description>Radio Panel Top Small Encoder XPNDR Toggle -1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-28b-d2a" name="Top Small Knob" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/transponder/transponder_hundreds_down" expression="" />
+          <onLeftFast type="XplaneInputAction" inputType="Command" path="sim/transponder/transponder_hundreds_down" expression="" />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/transponder/transponder_hundreds_up" expression="" />
+          <onRightFast type="XplaneInputAction" inputType="Command" path="sim/transponder/transponder_hundreds_up" expression="" />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="4304b6d2-b1db-4fc9-a00a-204ba7baa66a" operand="=" value="7" logic="and" />
+          <precondition type="config" active="true" ref="2f0c3aac-d457-4c4e-959b-d52362ac945e" operand="=" value="-1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="bbb7d9ec-0c9b-47a8-95e0-b32ec618de3c">
+      <active>true</active>
+      <description>Radio Panel Bottom Small Encoder XPNDR Toggle -1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-28b-d2a" name="Bottom Smal Knob" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/transponder/transponder_hundreds_down" expression="" />
+          <onLeftFast type="XplaneInputAction" inputType="Command" path="sim/transponder/transponder_hundreds_down" expression="" />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/transponder/transponder_hundreds_up" expression="" />
+          <onRightFast type="XplaneInputAction" inputType="Command" path="sim/transponder/transponder_hundreds_up" expression="" />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="8a718224-c0c3-4a70-90e5-bc5b71eeab91" operand="=" value="7" logic="and" />
+          <precondition type="config" active="true" ref="1f785849-06b9-4884-839a-50cea406e4b3" operand="=" value="-1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d6db2086-8691-46d4-a195-78fe5a748297">
+      <active>true</active>
+      <description>Radio Panel Top Knob Com1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-28b-d2a" name="Com 1 Top" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="Radio Panel Top Knob" varExpression="@1" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b91c72c9-5118-429a-96d2-711e3f6aaa34">
+      <active>true</active>
+      <description>Radio Panel Bottom Knob Com1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-28b-d2a" name="Com 1 Bottom" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="Radio Panel Bottom Knob" varExpression="@1" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f5003c54-4482-4bd8-8c31-54bc1d38110d">
+      <active>true</active>
+      <description>Radio Panel Top Knob Com 2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-28b-d2a" name="Com 2 Top" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="Radio Panel Top Knob" varExpression="@2" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="0a91fd7f-d61c-4a4c-870c-7d83d49557c0">
+      <active>true</active>
+      <description>Radio Panel Bottom Knob Com 2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-28b-d2a" name="Com2 Bottom" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="Radio Panel Bottom Knob" varExpression="@2" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="4ab8db20-df89-4d8c-b6df-48a9b067a002">
+      <active>true</active>
+      <description>Radio Panel Top Knob NAV1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-28b-d2a" name="Nav 1  Top" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="Radio Panel Top Knob" varExpression="@3" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="59cca511-2eb3-4938-8d14-8f03b5aa3ba6">
+      <active>true</active>
+      <description>Radio Panel Bottom Knob NAV1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-28b-d2a" name="NAV 1 Bottom" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="Radio Panel Bottom Knob" varExpression="@3" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="6c436d76-65de-4196-b429-3c243b30d817">
+      <active>true</active>
+      <description>Radio Panel Top Knob NAV2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-28b-d2a" name="Nav 2 Top" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="Radio Panel Top Knob" varExpression="@4" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="563d3fd9-38d7-4251-8583-f319f4b7a6e3">
+      <active>true</active>
+      <description>Radio Panel Bottom Knob NAV2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-28b-d2a" name="Nav 2 Bottom" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="Radio Panel Bottom Knob" varExpression="@4" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="42e2f0f3-ab2b-4a68-8ca7-282ae56821ed">
+      <active>true</active>
+      <description>Radio Panel Top Knob ADF</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-28b-d2a" name="ADF Top" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="Radio Panel Top Knob" varExpression="@5" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8cc21236-7659-4d5f-9cbc-eca4216170e2">
+      <active>true</active>
+      <description>Radio Panel Bottom Knob ADF</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-28b-d2a" name="ADF Bottom" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="Radio Panel Bottom Knob" varExpression="@5" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="29a64854-b928-499c-9616-adf439a60ce3">
+      <active>true</active>
+      <description>Radio Panel Top Knob DME</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-28b-d2a" name="DME  Top" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="Radio Panel Top Knob" varExpression="@6" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d623ff96-19a0-4339-a7d6-a7b63d42ff30">
+      <active>true</active>
+      <description>Radio Panel Bottom Knob DME</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-28b-d2a" name="DME Bottom" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="Radio Panel Bottom Knob" varExpression="@6" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="db1fdbfc-0b6b-4a9c-a619-2d08d8a995e1">
+      <active>true</active>
+      <description>Radio Panel Top Knob XPNDR</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-28b-d2a" name="XPRD Top" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="Radio Panel Top Knob" varExpression="@7" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a3a3d49d-27af-4071-9374-d9220d87bb65">
+      <active>true</active>
+      <description>Radio Panel Bottom Knob XPNDR</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-28b-d2a" name="XPRD Bottom" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="Radio Panel Bottom Knob" varExpression="@7" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="86687b36-9ff8-41d8-92f6-8b300c752a43">
+      <active>true</active>
+      <description>NAV LIGHT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Switch Panel/ SN-58FFFDFFFDFFFFFFFF" name="Nav Switch" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/lights/nav_lights_on" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="sim/lights/nav_lights_off" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="37ce2750-bd20-4de4-89e2-b76dc45a6b8f">
+      <active>true</active>
+      <description>STROBE</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Switch Panel/ SN-58FFFDFFFDFFFFFFFF" name="Strobe Switch" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/lights/strobe_lights_on" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="sim/lights/strobe_lights_off" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="27f9ba30-ed2b-4502-bde8-c1ae52bd75c2">
+      <active>true</active>
+      <description>BEACON LIGHTS</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Switch Panel/ SN-58FFFDFFFDFFFFFFFF" name="Beacon Switch" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/lights/beacon_lights_on" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="sim/lights/beacon_lights_off" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="423b728a-e619-4210-ab98-0392e9a605b1">
+      <active>true</active>
+      <description>PANEL LIGHT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Switch Panel/ SN-58FFFDFFFDFFFFFFFF" name="Panel Switch" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/annunciator/test_all_annunciators" expression="" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="979766b2-ec89-4d4f-bc77-d5ad2efc7672">
+      <active>true</active>
+      <description>TAXI LIGHT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Switch Panel/ SN-58FFFDFFFDFFFFFFFF" name="Taxi Switch" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/lights/taxi_lights_on" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="sim/lights/taxi_lights_off" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="156bab40-5e5e-47f5-bb7b-bf1a42abb1eb">
+      <active>true</active>
+      <description>PITOT HEAT 1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Switch Panel/ SN-58FFFDFFFDFFFFFFFF" name="Pilot Heat Switc" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/ice/pitot_heat1_on" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="sim/ice/pitot_heat1_off" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b2f7f208-a5fb-4ea0-b8d3-2d34bf4d2a75">
+      <active>true</active>
+      <description>PITPOT HEAT 2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Switch Panel/ SN-58FFFDFFFDFFFFFFFF" name="Pilot Heat Switc" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/ice/pitot_heat0_on" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="sim/ice/pitot_heat0_off" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a7b6fc53-6613-4848-850e-9c92faab9447">
+      <active>true</active>
+      <description>FUEL PUMP 1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Switch Panel/ SN-58FFFDFFFDFFFFFFFF" name="Fuel Pump Switch" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/fuel/fuel_pump_1_on" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="sim/fuel/fuel_pump_1_off" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="67b76bf2-29e9-4b15-afaf-72da811d7f42">
+      <active>true</active>
+      <description>FUEL PUMP 2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Switch Panel/ SN-58FFFDFFFDFFFFFFFF" name="Fuel Pump Switch" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/fuel/fuel_pump_2_on" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="sim/fuel/fuel_pump_2_off" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a7975ff4-3cc5-4b8e-9138-3f08cf9f2d54">
+      <active>true</active>
+      <description>LANDING LIGHT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Switch Panel/ SN-58FFFDFFFDFFFFFFFF" name="Landing Switch" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/lights/landing_01_light_on" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="sim/lights/landing_01_light_off" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c7013f8b-b912-4923-863d-7ffb1a61be3d">
+      <active>true</active>
+      <description>LANDING LIGHT2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Switch Panel/ SN-58FFFDFFFDFFFFFFFF" name="Landing Switch" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/lights/landing_02_light_on" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="sim/lights/landing_02_light_off" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="9754b9f9-6ab0-4ed0-b5c9-967192397ae1">
+      <active>true</active>
+      <description>Avionics Bus 2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Switch Panel/ SN-58FFFDFFFDFFFFFFFF" name="Avionics Switch" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/electrical/cross_tie_on" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="sim/electrical/cross_tie_off" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b64d79e6-d1ef-4b7f-b3a7-3c888b0bcc5c">
+      <active>true</active>
+      <description>Avionics Bus 1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Switch Panel/ SN-58FFFDFFFDFFFFFFFF" name="Avionics Switch" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/systems/avionics_on" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="sim/systems/avionics_off" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e8764157-9ef2-448a-b284-58b16269c5fd">
+      <active>true</active>
+      <description>De-Ice 0</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Switch Panel/ SN-58FFFDFFFDFFFFFFFF" name="De Ice Switch" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/ice/inlet_heat0_on" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="sim/ice/inlet_heat0_off" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="619893cb-7f42-4104-8866-6c129a00b220">
+      <active>true</active>
+      <description>De-Ice 1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Switch Panel/ SN-58FFFDFFFDFFFFFFFF" name="De Ice Switch" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/ice/inlet_heat1_on" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="sim/ice/inlet_heat1_off" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="0b7931a1-4afa-4053-8b28-16e009e47667">
+      <active>true</active>
+      <description>De-Ice wing</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Switch Panel/ SN-58FFFDFFFDFFFFFFFF" name="De Ice Switch" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/ice/wing_heat_on" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="sim/ice/wing_heat_off" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="6eaf8b95-3134-48be-9217-37d1f72c34e6">
+      <active>true</active>
+      <description>Master BAT.</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Switch Panel/ SN-58FFFDFFFDFFFFFFFF" name="Master Bat Sw" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/electrical/battery_1_on" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="sim/electrical/battery_1_off" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2ed7ed55-13db-48c1-b932-0e7057c6f2b2">
+      <active>true</active>
+      <description>Master ALT.1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Switch Panel/ SN-58FFFDFFFDFFFFFFFF" name="Master Alt Sw" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/electrical/generator_1_on" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="sim/electrical/generator_1_off" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="34caf513-79ba-4c9f-802d-326c2478326c">
+      <active>true</active>
+      <description>Master ALT. 2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Switch Panel/ SN-58FFFDFFFDFFFFFFFF" name="Master Alt Sw" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/electrical/generator_2_on" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="sim/electrical/generator_2_off" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="fd8c5082-04b9-4a93-b61a-d7f9bbab212e">
+      <active>true</active>
+      <description>cowl flap</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Switch Panel/ SN-58FFFDFFFDFFFFFFFF" name="Cowl Close Switc" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/flight_controls/cowl_flaps_closed" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="sim/flight_controls/cowl_flaps_open" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f9d5b3d0-6f4e-410c-b1de-ed55a9b6ec5b">
+      <active>true</active>
+      <description>Selector Off</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Switch Panel/ SN-58FFFDFFFDFFFFFFFF" name="Off Selector" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/magnetos/magnetos_off" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="sim/electrical/battery_2_off" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8ce7ef06-ac8a-41bb-a243-cc9ca71db855">
+      <active>true</active>
+      <description>Selector L</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Switch Panel/ SN-58FFFDFFFDFFFFFFFF" name="L selector" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/magnetos/magnetos_left_1" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="sim/electrical/battery_2_off" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="97da1f3b-c3dc-469b-9d7d-b6e2b465e228">
+      <active>true</active>
+      <description>Selector R</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Switch Panel/ SN-58FFFDFFFDFFFFFFFF" name="R Selector" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/magnetos/magnetos_right_1" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="sim/electrical/battery_2_off" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="efe11fcd-7d38-4fb1-ad28-42bd6d5bd2ea">
+      <active>true</active>
+      <description>Selector Both/All</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Switch Panel/ SN-58FFFDFFFDFFFFFFFF" name="BothAll Selector" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/magnetos/magnetos_both" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="sim/electrical/battery_2_off" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="7b901ce7-6fbf-4426-97b2-6d58aaa26e29">
+      <active>true</active>
+      <description>Selector Start</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Switch Panel/ SN-58FFFDFFFDFFFFFFFF" name="Start Selector" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/starters/engage_starter_1" expression="$" />
+          <onRelease type="VariableInputAction" varType="number" varName="Engine start" varExpression="@2" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="69eb10b3-3ab6-406b-b617-2ad661b02d7a">
+      <active>true</active>
+      <description>Radio Panel ACT/STBY Top COM1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-28b-d2a" name="Act Stby Top" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/radios/com1_standy_flip" expression="" />
+          <onRelease />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="4304b6d2-b1db-4fc9-a00a-204ba7baa66a" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="6dd8c162-c979-4d4e-9505-fac0c0018ebd">
+      <active>true</active>
+      <description>Radio Panel ACT/STBY Bottom COM1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-28b-d2a" name="Act Stby Bottom" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/radios/com1_standy_flip" expression="" />
+          <onRelease />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="8a718224-c0c3-4a70-90e5-bc5b71eeab91" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b4368ce8-b943-4464-9276-7a34fee70ba4">
+      <active>true</active>
+      <description>Radio Panel ACT/STBY Top COM2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-28b-d2a" name="Act Stby Top" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/radios/com2_standy_flip" expression="" />
+          <onRelease />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="4304b6d2-b1db-4fc9-a00a-204ba7baa66a" operand="=" value="2" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="92e36d25-0563-4d18-95b1-9d59b6087a5b">
+      <active>true</active>
+      <description>Radio Panel ACT/STBY Bottom COM2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-28b-d2a" name="Act Stby Bottom" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/radios/com2_standy_flip" expression="" />
+          <onRelease />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="8a718224-c0c3-4a70-90e5-bc5b71eeab91" operand="=" value="2" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="0812d655-5df1-4ca5-bd26-7f41132fe48c">
+      <active>true</active>
+      <description>Radio Panel ACT/STBY Top NAV1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-28b-d2a" name="Act Stby Top" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/radios/nav1_standy_flip" expression="" />
+          <onRelease />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="4304b6d2-b1db-4fc9-a00a-204ba7baa66a" operand="=" value="3" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="43c68f12-5c19-4a4b-8d0a-36ca9822c8d0">
+      <active>true</active>
+      <description>Radio Panel ACT/STBY Bottom NAV1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-28b-d2a" name="Act Stby Bottom" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/radios/nav1_standy_flip" expression="" />
+          <onRelease />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="8a718224-c0c3-4a70-90e5-bc5b71eeab91" operand="=" value="3" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b185f97b-2e80-4b86-a87b-4dafb53066d8">
+      <active>true</active>
+      <description>Radio Panel ACT/STBY Top NAV2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-28b-d2a" name="Act Stby Top" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/radios/nav2_standy_flip" expression="" />
+          <onRelease />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="4304b6d2-b1db-4fc9-a00a-204ba7baa66a" operand="=" value="4" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="66a0dc23-7ef0-4c27-9637-a45a1a1e8800">
+      <active>true</active>
+      <description>Radio Panel ACT/STBY Top ADF</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-28b-d2a" name="Act Stby Top" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/radios/adf1_standy_flip" expression="" />
+          <onRelease />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="4304b6d2-b1db-4fc9-a00a-204ba7baa66a" operand="=" value="5" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d3ec1638-8ba8-48b2-a4e7-261149f3eb55">
+      <active>true</active>
+      <description>Radio Panel ACT/STBY Bottom ADF</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-28b-d2a" name="Act Stby Bottom" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/radios/adf1_standy_flip" expression="" />
+          <onRelease />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="8a718224-c0c3-4a70-90e5-bc5b71eeab91" operand="=" value="5" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="77f4e689-78e4-457d-bfbe-129b9e5bde71">
+      <active>true</active>
+      <description>Radio Panel ACT/STBY Bottom NAV2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-28b-d2a" name="Act Stby Bottom" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/radios/nav2_standy_flip" expression="" />
+          <onRelease />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="8a718224-c0c3-4a70-90e5-bc5b71eeab91" operand="=" value="4" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8a21c9c5-98d3-44ae-ad15-e591ce6e3b57">
+      <active>true</active>
+      <description>Radio Panel ACT/STBY Top XPDR</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-28b-d2a" name="Act Stby Top" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="Top ADF Toggle" varExpression="#*-1" />
+          <onRelease />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="4304b6d2-b1db-4fc9-a00a-204ba7baa66a" operand="=" value="7" logic="or" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f1d0feab-6177-4b7d-a88c-d6a6f1632861">
+      <active>true</active>
+      <description>Radio Panel ACT/STBY Bottom XPDR</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-28b-d2a" name="Act Stby Bottom" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="Bottom ADF Toggle" varExpression="#*-1" />
+          <onRelease />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="8a718224-c0c3-4a70-90e5-bc5b71eeab91" operand="=" value="7" logic="or" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="25d12f42-26a9-40f1-80e5-a9261eb0c1e3">
+      <active>true</active>
+      <description>NULLTop DME</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-28b-d2a" name="DME  Top" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="string" varName="NULL" varExpression="-----" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="4e61b125-c975-4e0e-a84b-526dbd4049f6">
+      <active>true</active>
+      <description>NULLTop XPDR</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-28b-d2a" name="XPRD Top" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="string" varName="NULL" varExpression="-----" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="9e75b60c-7132-4be0-bbbb-b1cfcad65998">
+      <active>true</active>
+      <description>NULL Buttom DME</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-28b-d2a" name="DME Bottom" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="string" varName="NULL" varExpression="-----" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2dd35d8d-5ddb-4ff4-8758-406e86e86d16">
+      <active>true</active>
+      <description>NULL Buttom XPDR</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-28b-d2a" name="XPRD Bottom" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="string" varName="NULL" varExpression="-----" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ed419f3d-b258-4d98-aff6-5af22308f6b4">
+      <active>true</active>
+      <description>Multi Panel ALT Mode</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Multi Panel/ SN-9FB-4DA" name="ALT Selector" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="Multi Panel Selector" varExpression="@1" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d6d21135-c432-4513-81cd-2f7c5be01f18">
+      <active>true</active>
+      <description>Multi Panel VS Mode</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Multi Panel/ SN-9FB-4DA" name="VS Selector" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="Multi Panel Selector" varExpression="@2" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8c88becc-aaf8-4dcb-a072-099011f24836">
+      <active>true</active>
+      <description>Multi Panel IAS Mode</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Multi Panel/ SN-9FB-4DA" name="IAS Selector" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="Multi Panel Selector" varExpression="@3" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c0be7381-b302-459e-b642-f2ad36149c2a">
+      <active>true</active>
+      <description>Multi Panel HDG Mode</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Multi Panel/ SN-9FB-4DA" name="HDG Selector" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="Multi Panel Selector" varExpression="@4" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e9979315-abe8-4f85-af14-613f68064b3f">
+      <active>true</active>
+      <description>Multi Panel CRS Mode</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Multi Panel/ SN-9FB-4DA" name="CRS Selector" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="Multi Panel Selector" varExpression="@5" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="dbc0a825-6dcb-4b5a-9c26-e14dae90b2c5">
+      <active>true</active>
+      <description>Multi Panel Flap Ratio Up</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Multi Panel/ SN-9FB-4DA" name="Flaps UP" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/flight_controls/flaps_up" expression="" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="770ab12e-117d-4de3-bda6-36398f328706">
+      <active>true</active>
+      <description>Multi Panel Flap Ratio Down</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Multi Panel/ SN-9FB-4DA" name="Flaps DN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/flight_controls/flaps_down" expression="" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="69f93457-4e7a-4852-a881-3fe86547666e">
+      <active>true</active>
+      <description>Multi Panel Pitch Trim</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Multi Panel/ SN-9FB-4DA" name="Pitch Trim" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/flight_controls/pitch_trim_up" expression="" />
+          <onLeftFast type="XplaneInputAction" inputType="Command" path="sim/flight_controls/pitch_trim_up" expression="" />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/flight_controls/pitch_trim_down" expression="" />
+          <onRightFast type="XplaneInputAction" inputType="Command" path="sim/flight_controls/pitch_trim_down" expression="" />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2cfcc4b9-ce4d-431a-a564-d9c046c85ead">
+      <active>true</active>
+      <description>Multi Panel Pitch Trim (speed x2)</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Multi Panel/ SN-9FB-4DA" name="Pitch Trim" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/flight_controls/pitch_trim_up" expression="" />
+          <onLeftFast type="XplaneInputAction" inputType="Command" path="sim/flight_controls/pitch_trim_up" expression="" />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/flight_controls/pitch_trim_down" expression="" />
+          <onRightFast type="XplaneInputAction" inputType="Command" path="sim/flight_controls/pitch_trim_down" expression="" />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="0d68656f-8491-4436-9f44-d1337c664587">
+      <active>true</active>
+      <description>Multi Panel Pitch Trim (speed x3)</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Multi Panel/ SN-9FB-4DA" name="Pitch Trim" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/flight_controls/pitch_trim_up" expression="" />
+          <onLeftFast type="XplaneInputAction" inputType="Command" path="sim/flight_controls/pitch_trim_up" expression="" />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/flight_controls/pitch_trim_down" expression="" />
+          <onRightFast type="XplaneInputAction" inputType="Command" path="sim/flight_controls/pitch_trim_down" expression="" />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="763d21df-1273-4ed2-8af5-12e1cf4d16bd">
+      <active>false</active>
+      <description>Multi Panel Auto Throttle ARM</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Multi Panel/ SN-9FB-4DA" name="Auto Trot Arm" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/autopilot/autothrottle_on" expression="" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="65d70f62-51a2-45b3-8b33-57b3a2f96143">
+      <active>true</active>
+      <description>Multi Panel Auto Throttle ARM Copy</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Multi Panel/ SN-9FB-4DA" name="Auto Trot Arm" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="KeyInputAction" key="S" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="76c27a1f-0bf5-45aa-a545-38251f2ad95d">
+      <active>true</active>
+      <description>Multi Panel Auto Throttle Off</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Multi Panel/ SN-9FB-4DA" name="Auto Trot off" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/autopilot/autothrottle_off" expression="" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a36a39a8-2103-4afb-9ed3-151d8a5667b9">
+      <active>true</active>
+      <description>Multi Panel Knob IAS</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Multi Panel/ SN-9FB-4DA" name="MUlti panel Knob" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/autopilot/airspeed_down" expression="" />
+          <onLeftFast type="XplaneInputAction" inputType="Command" path="sim/autopilot/airspeed_down" expression="" />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/autopilot/airspeed_up" expression="" />
+          <onRightFast type="XplaneInputAction" inputType="Command" path="sim/autopilot/airspeed_up" expression="" />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="2108d841-f645-450a-9980-a15acb30b9e0" operand="=" value="3" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="6722ab08-aecf-4736-a4c2-f1a9672bc5e0">
+      <active>true</active>
+      <description>Multi Panel Knob HDG</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Multi Panel/ SN-9FB-4DA" name="MUlti panel Knob" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/autopilot/heading_down" expression="" />
+          <onLeftFast type="XplaneInputAction" inputType="Command" path="sim/autopilot/heading_down" expression="" />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/autopilot/heading_up" expression="" />
+          <onRightFast type="XplaneInputAction" inputType="Command" path="sim/autopilot/heading_up" expression="" />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="2108d841-f645-450a-9980-a15acb30b9e0" operand="=" value="4" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="132a3af3-c329-45ef-a04f-40be74de15fb">
+      <active>true</active>
+      <description>Multi Panel Knob CRS</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Multi Panel/ SN-9FB-4DA" name="MUlti panel Knob" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/radios/copilot_obs_HSI_down" expression="" />
+          <onLeftFast type="XplaneInputAction" inputType="Command" path="sim/radios/copilot_obs_HSI_down" expression="" />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/radios/copilot_obs_HSI_up" expression="" />
+          <onRightFast type="XplaneInputAction" inputType="Command" path="sim/radios/copilot_obs_HSI_up" expression="" />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="2108d841-f645-450a-9980-a15acb30b9e0" operand="=" value="5" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e5532729-1127-4162-acb2-7b16d27fcfd3">
+      <active>true</active>
+      <description>Multi Panel Knob CRS Copy</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Multi Panel/ SN-9FB-4DA" name="MUlti panel Knob" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/radios/obs1_down" expression="" />
+          <onLeftFast type="XplaneInputAction" inputType="Command" path="sim/radios/obs1_down" expression="" />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/radios/obs1_up" expression="" />
+          <onRightFast type="XplaneInputAction" inputType="Command" path="sim/radios/copilot_obs1_up" expression="" />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="2108d841-f645-450a-9980-a15acb30b9e0" operand="=" value="5" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="4943dca0-e920-4798-9c38-fce4336c91ef">
+      <active>true</active>
+      <description>Multi Panel Knob VS</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Multi Panel/ SN-9FB-4DA" name="MUlti panel Knob" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/autopilot/vertical_speed_down" expression="" />
+          <onLeftFast type="XplaneInputAction" inputType="Command" path="sim/autopilot/vertical_speed_down" expression="" />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/autopilot/vertical_speed_up" expression="" />
+          <onRightFast type="XplaneInputAction" inputType="Command" path="sim/autopilot/vertical_speed_up" expression="" />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="2108d841-f645-450a-9980-a15acb30b9e0" operand="=" value="2" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="64d4f24f-45c6-458c-af7f-ea109fa478ab">
+      <active>true</active>
+      <description>Multi Panel Knob ALT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Multi Panel/ SN-9FB-4DA" name="MUlti panel Knob" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/autopilot/altitude_down" expression="" />
+          <onLeftFast type="XplaneInputAction" inputType="Command" path="sim/autopilot/altitude_down" expression="" />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/autopilot/altitude_up" expression="" />
+          <onRightFast type="XplaneInputAction" inputType="Command" path="sim/autopilot/altitude_up" expression="" />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="2108d841-f645-450a-9980-a15acb30b9e0" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="abfc9948-7f59-4a36-85e1-31f8c809ec8c">
+      <active>true</active>
+      <description>Multi Panel AP Button</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Multi Panel/ SN-9FB-4DA" name="AP Button" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/autopilot/servos_toggle" expression="" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="927a2838-da35-45ba-b7ea-0fd5178c4967">
+      <active>true</active>
+      <description>Multi Panel HDG Button</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Multi Panel/ SN-9FB-4DA" name="HDG Button" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/autopilot/heading" expression="" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e7bf041e-002a-4391-9e11-8bc299eaad9e">
+      <active>true</active>
+      <description>Multi Panel NAV Button</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Multi Panel/ SN-9FB-4DA" name="NAV Button" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/autopilot/NAV" expression="" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2cca582b-11ee-40c5-99ea-c2e21091f206">
+      <active>true</active>
+      <description>Multi Panel ALT Button</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Multi Panel/ SN-9FB-4DA" name="ALT Button" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/autopilot/altitude_hold" expression="" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="9e83f7ea-d771-4181-9cc2-d35753e3bee7">
+      <active>true</active>
+      <description>Multi Panel VS Button</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Multi Panel/ SN-9FB-4DA" name="VS Button" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/autopilot/vertical_speed" expression="" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d9da1e65-63c5-44bf-9ba0-e24cdc6af69c">
+      <active>true</active>
+      <description>Multi Panel APR Button</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Multi Panel/ SN-9FB-4DA" name="APR Button" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/autopilot/approach" expression="" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="863f1c44-50ee-4118-89b9-9096e2abf7e5">
+      <active>true</active>
+      <description>Multi Panel IAS Button</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Multi Panel/ SN-9FB-4DA" name="IAS Button" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/speed_press" expression="" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="7c0696de-07d2-4cce-9107-50508c318660">
+      <active>true</active>
+      <description>Multi Panel REV Button</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Multi Panel/ SN-9FB-4DA" name="REV Button" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/autopilot/back_course" expression="" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>
