@@ -207,7 +207,7 @@
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
           <comparison active="True" value="0" operand="=" ifValue="7" elseValue="0" />
         </modifiers>
-        <display type="-" serial="Radio Panel/ SN-58FFFDFFFDFFFFFFFF" trigger="normal" pin="" pinBrightness="255" />
+        <display type="-" serial="Radio Panel/ SN-28b-d2a" trigger="normal" pin="" pinBrightness="255" />
         <preconditions />
         <configrefs />
       </settings>
@@ -971,7 +971,7 @@
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="-" serial="Radio Panel/ SN-58FFFDFFFDFFFFFFFF" trigger="normal" pin="" pinBrightness="255" />
+        <display type="-" serial="Radio Panel/ SN-28b-d2a" trigger="normal" pin="" pinBrightness="255" />
         <preconditions />
         <configrefs />
       </settings>
@@ -1051,7 +1051,7 @@
     <config guid="871042b0-f1cf-4b28-8ae7-9dd07bc4f87a">
       <active>true</active>
       <description>Radio Panel Bottom big Encoder COM1</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-58FFFDFFFDFFFFFFFF" name="Bottom Big Knob" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-28b-d2a" name="Bottom Big Knob" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="MSFS2020CustomInputAction" command="(&gt;K:COM_RADIO_WHOLE_DEC)" />
           <onLeftFast type="MSFS2020CustomInputAction" command="(&gt;K:COM_RADIO_WHOLE_DEC)" />
@@ -1083,7 +1083,7 @@
     <config guid="1a155d39-4ace-461a-942c-1185104a2724">
       <active>true</active>
       <description>Radio Panel Bottom big Encoder COM2</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-58FFFDFFFDFFFFFFFF" name="Bottom Big Knob" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-28b-d2a" name="Bottom Big Knob" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="MSFS2020CustomInputAction" command="(&gt;K:COM2_RADIO_WHOLE_DEC)" />
           <onLeftFast type="MSFS2020CustomInputAction" command="(&gt;K:COM2_RADIO_WHOLE_DEC)" />
@@ -1115,7 +1115,7 @@
     <config guid="0ca69220-1a03-49ea-99c8-328ae6beba93">
       <active>true</active>
       <description>Radio Panel Bottom big Encoder NAV1</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-58FFFDFFFDFFFFFFFF" name="Bottom Big Knob" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-28b-d2a" name="Bottom Big Knob" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="MSFS2020CustomInputAction" command="(&gt;K:NAV1_RADIO_WHOLE_DEC)" />
           <onLeftFast type="MSFS2020CustomInputAction" command="(&gt;K:NAV1_RADIO_WHOLE_DEC)" />
@@ -1147,7 +1147,7 @@
     <config guid="a6b52417-1be1-4e04-8e31-312aeb308086">
       <active>true</active>
       <description>Radio Panel Bottom big Encoder NAV2</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-58FFFDFFFDFFFFFFFF" name="Bottom Big Knob" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-28b-d2a" name="Bottom Big Knob" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="MSFS2020CustomInputAction" command="(&gt;K:NAV2_RADIO_WHOLE_DEC)" />
           <onLeftFast type="MSFS2020CustomInputAction" command="(&gt;K:NAV2_RADIO_WHOLE_DEC)" />
@@ -1179,7 +1179,7 @@
     <config guid="29de1878-9da8-46dd-be42-43ac859fc959">
       <active>true</active>
       <description>Radio Panel Bottom big Encoder ADF</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-58FFFDFFFDFFFFFFFF" name="Bottom Big Knob" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-28b-d2a" name="Bottom Big Knob" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="MSFS2020CustomInputAction" command="(&gt;K:ADF_100_DEC)" />
           <onLeftFast type="MSFS2020CustomInputAction" command="(&gt;K:ADF_100_DEC)" />
@@ -1212,7 +1212,7 @@
     <config guid="285716e1-d412-45b2-839c-5e0bd355a306">
       <active>true</active>
       <description>Radio Panel Bottom big Encoder XPNDR Toggle 1</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-58FFFDFFFDFFFFFFFF" name="Bottom Big Knob" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-28b-d2a" name="Bottom Big Knob" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="MSFS2020CustomInputAction" command="(&gt;K:XPNDR_10_DEC)" />
           <onLeftFast type="MSFS2020CustomInputAction" command="(&gt;K:XPNDR_10_DEC)" />
@@ -1246,7 +1246,7 @@
     <config guid="3c6ea5f6-7c54-449d-923a-1b6313391cf2">
       <active>true</active>
       <description>Radio Panel Bottom big Encoder XPNDR Toggle -1</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-58FFFDFFFDFFFFFFFF" name="Bottom Big Knob" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-28b-d2a" name="Bottom Big Knob" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="MSFS2020CustomInputAction" command="(&gt;K:XPNDR_1000_DEC)" />
           <onLeftFast type="MSFS2020CustomInputAction" command="(&gt;K:XPNDR_1000_DEC)" />
