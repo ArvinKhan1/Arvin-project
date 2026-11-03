@@ -1697,8 +1697,8 @@
       <description>PANEL LIGHT</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Switch Panel/ SN-58FFFDFFFDFFFFFFFF" name="Panel Switch" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
-          <onPress type="XplaneInputAction" inputType="DataRef" path="sim/cockpit2/switches/panel_brightness_ratio[0]" expression="1" />
-          <onRelease type="XplaneInputAction" inputType="DataRef" path="sim/cockpit2/switches/panel_brightness_ratio[0]" expression="0" />
+          <onPress type="XplaneInputAction" inputType="DataRef" path="sim/cockpit2/switches/instrument_brightness_ratio[0]" expression="1" />
+          <onRelease type="XplaneInputAction" inputType="DataRef" path="sim/cockpit2/switches/instrument_brightness_ratio[0]" expression="0" />
         </button>
         <preconditions />
         <configrefs />
@@ -1949,8 +1949,8 @@
       <description>Selector Start</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Switch Panel/ SN-58FFFDFFFDFFFFFFFF" name="Start Selector" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
-          <onPress type="XplaneInputAction" inputType="DataRef" path="sim/cockpit2/engine/actuators/ignition_key[0]" expression="4" />
-          <onRelease type="XplaneInputAction" inputType="DataRef" path="sim/cockpit2/engine/actuators/ignition_key[0]" expression="3" />
+          <onPress type="XplaneInputAction" inputType="DataRef" path="mobiflight/starter" expression="15" />
+          <onRelease type="XplaneInputAction" inputType="DataRef" path="mobiflight/starter" expression="0" />
         </button>
         <preconditions />
         <configrefs />
