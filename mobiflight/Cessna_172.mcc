@@ -678,9 +678,9 @@
       <active>true</active>
       <description>Radio Panel Screen Top Right shows DME</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="XplaneDataRef" path="sim/cockpit/radios/gps_dme_dist_m" />
+        <source type="XplaneDataRef" path="sim/cockpit2/radios/indicators/nav1_dme_distance_nm" />
         <modifiers>
-          <transformation active="True" expression="$*0.001" substrStart="0" substrEnd="7" />
+          <transformation active="True" expression="Round($,1)" substrStart="0" substrEnd="7" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
         <display type="Display Module" serial="Radio Panel/ SN-28b-d2a" trigger="normal" ledAddress="Radio Panel Scre" ledConnector="1" ledModuleSize="5" ledPadding="True" ledReverseDigits="True" ledBrightnessRef="dca8ef64-fcb7-4af5-b1d2-2cff0ca8bc9a" ledPaddingChar=" " ledDigits="0,1,2,3,4" />
@@ -694,9 +694,9 @@
       <active>true</active>
       <description>Radio Panel Screen Bottom Right shows DME</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="XplaneDataRef" path="sim/cockpit/radios/gps_dme_dist_m" />
+        <source type="XplaneDataRef" path="sim/cockpit2/radios/indicators/nav1_dme_distance_nm" />
         <modifiers>
-          <transformation active="True" expression="$*0.001" substrStart="0" substrEnd="7" />
+          <transformation active="True" expression="Round($,1)" substrStart="0" substrEnd="7" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
         <display type="Display Module" serial="Radio Panel/ SN-28b-d2a" trigger="normal" ledAddress="Radio Panel Scre" ledConnector="2" ledModuleSize="5" ledPadding="True" ledReverseDigits="True" ledBrightnessRef="dca8ef64-fcb7-4af5-b1d2-2cff0ca8bc9a" ledPaddingChar=" " ledDigits="0,1,2,3,4" />
@@ -990,6 +990,34 @@
         <configrefs />
       </settings>
     </config>
+    <config guid="2f0c3aac-d457-4c4e-959b-d52362ac945e">
+      <active>true</active>
+      <description>Radio Panel Top XPDR Toggle</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="Top ADF Toggle" varExpression="$" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="1f785849-06b9-4884-839a-50cea406e4b3">
+      <active>true</active>
+      <description>Radio Panel Bottom XPDR Toggle</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="Bottom ADF Toggle" varExpression="$" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
   </outputs>
   <inputs>
     <config guid="a5891305-6176-40da-aa4f-4e7409cf763f">
@@ -1210,7 +1238,7 @@
         </encoder>
         <preconditions>
           <precondition type="config" active="true" ref="4304b6d2-b1db-4fc9-a00a-204ba7baa66a" operand="=" value="7" logic="and" />
-          <precondition type="config" active="true" ref="2f0c3aac-d457-4c4e-959b-d52362ac945e" operand="=" value="-1" logic="and" />
+          <precondition type="config" active="true" ref="2f0c3aac-d457-4c4e-959b-d52362ac945e" operand="!=" value="1" logic="and" />
         </preconditions>
         <configrefs />
       </settings>
@@ -1227,7 +1255,7 @@
         </encoder>
         <preconditions>
           <precondition type="config" active="true" ref="8a718224-c0c3-4a70-90e5-bc5b71eeab91" operand="=" value="7" logic="and" />
-          <precondition type="config" active="true" ref="1f785849-06b9-4884-839a-50cea406e4b3" operand="=" value="-1" logic="and" />
+          <precondition type="config" active="true" ref="1f785849-06b9-4884-839a-50cea406e4b3" operand="!=" value="1" logic="and" />
         </preconditions>
         <configrefs />
       </settings>
@@ -1438,7 +1466,7 @@
         </encoder>
         <preconditions>
           <precondition type="config" active="true" ref="4304b6d2-b1db-4fc9-a00a-204ba7baa66a" operand="=" value="7" logic="and" />
-          <precondition type="config" active="true" ref="2f0c3aac-d457-4c4e-959b-d52362ac945e" operand="=" value="-1" logic="and" />
+          <precondition type="config" active="true" ref="2f0c3aac-d457-4c4e-959b-d52362ac945e" operand="!=" value="1" logic="and" />
         </preconditions>
         <configrefs />
       </settings>
@@ -1455,7 +1483,7 @@
         </encoder>
         <preconditions>
           <precondition type="config" active="true" ref="8a718224-c0c3-4a70-90e5-bc5b71eeab91" operand="=" value="7" logic="and" />
-          <precondition type="config" active="true" ref="1f785849-06b9-4884-839a-50cea406e4b3" operand="=" value="-1" logic="and" />
+          <precondition type="config" active="true" ref="1f785849-06b9-4884-839a-50cea406e4b3" operand="!=" value="1" logic="and" />
         </preconditions>
         <configrefs />
       </settings>
@@ -1669,8 +1697,8 @@
       <description>PANEL LIGHT</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Switch Panel/ SN-58FFFDFFFDFFFFFFFF" name="Panel Switch" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
-          <onPress type="XplaneInputAction" inputType="Command" path="sim/annunciator/test_all_annunciators" expression="" />
-          <onRelease />
+          <onPress type="XplaneInputAction" inputType="DataRef" path="sim/cockpit2/switches/panel_brightness_ratio[0]" expression="1" />
+          <onRelease type="XplaneInputAction" inputType="DataRef" path="sim/cockpit2/switches/panel_brightness_ratio[0]" expression="0" />
         </button>
         <preconditions />
         <configrefs />
@@ -1761,7 +1789,7 @@
       </settings>
     </config>
     <config guid="9754b9f9-6ab0-4ed0-b5c9-967192397ae1">
-      <active>true</active>
+      <active>false</active>
       <description>Avionics Bus 2</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Switch Panel/ SN-58FFFDFFFDFFFFFFFF" name="Avionics Switch" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
@@ -1874,7 +1902,7 @@
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Switch Panel/ SN-58FFFDFFFDFFFFFFFF" name="Off Selector" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="Command" path="sim/magnetos/magnetos_off" expression="" />
-          <onRelease type="XplaneInputAction" inputType="Command" path="sim/electrical/battery_2_off" expression="" />
+          <onRelease />
         </button>
         <preconditions />
         <configrefs />
@@ -1886,7 +1914,7 @@
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Switch Panel/ SN-58FFFDFFFDFFFFFFFF" name="L selector" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="Command" path="sim/magnetos/magnetos_left_1" expression="" />
-          <onRelease type="XplaneInputAction" inputType="Command" path="sim/electrical/battery_2_off" expression="" />
+          <onRelease />
         </button>
         <preconditions />
         <configrefs />
@@ -1898,7 +1926,7 @@
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Switch Panel/ SN-58FFFDFFFDFFFFFFFF" name="R Selector" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="Command" path="sim/magnetos/magnetos_right_1" expression="" />
-          <onRelease type="XplaneInputAction" inputType="Command" path="sim/electrical/battery_2_off" expression="" />
+          <onRelease />
         </button>
         <preconditions />
         <configrefs />
@@ -1910,7 +1938,7 @@
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Switch Panel/ SN-58FFFDFFFDFFFFFFFF" name="BothAll Selector" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="Command" path="sim/magnetos/magnetos_both" expression="" />
-          <onRelease type="XplaneInputAction" inputType="Command" path="sim/electrical/battery_2_off" expression="" />
+          <onRelease />
         </button>
         <preconditions />
         <configrefs />
@@ -1921,8 +1949,8 @@
       <description>Selector Start</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Switch Panel/ SN-58FFFDFFFDFFFFFFFF" name="Start Selector" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
-          <onPress type="XplaneInputAction" inputType="Command" path="sim/starters/engage_starter_1" expression="$" />
-          <onRelease type="VariableInputAction" varType="number" varName="Engine start" varExpression="@2" />
+          <onPress type="XplaneInputAction" inputType="DataRef" path="sim/cockpit2/engine/actuators/ignition_key[0]" expression="4" />
+          <onRelease type="XplaneInputAction" inputType="DataRef" path="sim/cockpit2/engine/actuators/ignition_key[0]" expression="3" />
         </button>
         <preconditions />
         <configrefs />
@@ -2073,13 +2101,15 @@
       <description>Radio Panel ACT/STBY Top XPDR</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-28b-d2a" name="Act Stby Top" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
-          <onPress type="VariableInputAction" varType="number" varName="Top ADF Toggle" varExpression="#*-1" />
+          <onPress type="VariableInputAction" varType="number" varName="Top ADF Toggle" varExpression="if(#=1,-1,1)" />
           <onRelease />
         </button>
         <preconditions>
           <precondition type="config" active="true" ref="4304b6d2-b1db-4fc9-a00a-204ba7baa66a" operand="=" value="7" logic="or" />
         </preconditions>
-        <configrefs />
+        <configrefs>
+          <configref active="True" ref="2f0c3aac-d457-4c4e-959b-d52362ac945e" placeholder="#" />
+        </configrefs>
       </settings>
     </config>
     <config guid="f1d0feab-6177-4b7d-a88c-d6a6f1632861">
@@ -2087,13 +2117,15 @@
       <description>Radio Panel ACT/STBY Bottom XPDR</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio Panel/ SN-28b-d2a" name="Act Stby Bottom" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
-          <onPress type="VariableInputAction" varType="number" varName="Bottom ADF Toggle" varExpression="#*-1" />
+          <onPress type="VariableInputAction" varType="number" varName="Bottom ADF Toggle" varExpression="if(#=1,-1,1)" />
           <onRelease />
         </button>
         <preconditions>
           <precondition type="config" active="true" ref="8a718224-c0c3-4a70-90e5-bc5b71eeab91" operand="=" value="7" logic="or" />
         </preconditions>
-        <configrefs />
+        <configrefs>
+          <configref active="True" ref="1f785849-06b9-4884-839a-50cea406e4b3" placeholder="#" />
+        </configrefs>
       </settings>
     </config>
     <config guid="25d12f42-26a9-40f1-80e5-a9261eb0c1e3">
@@ -2271,7 +2303,7 @@
       </settings>
     </config>
     <config guid="763d21df-1273-4ed2-8af5-12e1cf4d16bd">
-      <active>false</active>
+      <active>true</active>
       <description>Multi Panel Auto Throttle ARM</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Multi Panel/ SN-9FB-4DA" name="Auto Trot Arm" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
@@ -2283,7 +2315,7 @@
       </settings>
     </config>
     <config guid="65d70f62-51a2-45b3-8b33-57b3a2f96143">
-      <active>true</active>
+      <active>false</active>
       <description>Multi Panel Auto Throttle ARM Copy</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Multi Panel/ SN-9FB-4DA" name="Auto Trot Arm" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
@@ -2362,7 +2394,7 @@
           <onLeft type="XplaneInputAction" inputType="Command" path="sim/radios/obs1_down" expression="" />
           <onLeftFast type="XplaneInputAction" inputType="Command" path="sim/radios/obs1_down" expression="" />
           <onRight type="XplaneInputAction" inputType="Command" path="sim/radios/obs1_up" expression="" />
-          <onRightFast type="XplaneInputAction" inputType="Command" path="sim/radios/copilot_obs1_up" expression="" />
+          <onRightFast type="XplaneInputAction" inputType="Command" path="sim/radios/obs1_up" expression="" />
         </encoder>
         <preconditions>
           <precondition type="config" active="true" ref="2108d841-f645-450a-9980-a15acb30b9e0" operand="=" value="5" logic="and" />
@@ -2479,7 +2511,7 @@
       <description>Multi Panel IAS Button</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Multi Panel/ SN-9FB-4DA" name="IAS Button" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
-          <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/speed_press" expression="" />
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/autopilot/level_change" expression="" />
           <onRelease />
         </button>
         <preconditions />
